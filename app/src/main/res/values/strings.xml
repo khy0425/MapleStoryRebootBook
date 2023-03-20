@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">리부트북</string>
+    <string name="event_image_description">이벤트 배너 이미지</string>
+
+    <string name="item1_title">유니온 레벨별 사냥터</string>
+    <string name="item2_title">링크, 유니온 효과 정리</string>
+    <string name="item3_title">직업별 스킬 코어 우선순위</string>
+    <string name="item4_title">사냥 계산기</string>
+    <string name="item5_title">무기 추옵 정리</string>
+    <string name="item6_title">무토 레시피</string>
+    <string name="item7_title">보스 결정석 메소 정리</string>
+    <string name="item8_title">주요 레시피 정리</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

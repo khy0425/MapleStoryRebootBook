@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Default status bar height -->
+    <dimen name="status_bar_height">24dp</dimen>
+
+    <!-- Default action bar height -->
+    <dimen name="action_bar_height">56dp</dimen>
+
+    <!-- Default navigation bar height -->
+    <dimen name="navigation_bar_height">48dp</dimen>
+
+    <!-- Example item size -->
+    <dimen name="item_size">42dp</dimen>
+
+    <!-- 네비게이션 헤더 높이 추가 -->
+    <dimen name="nav_header_height">176dp</dimen>
+</resources>
