@@ -1,6 +1,5 @@
-package com.example.rebootbook
+package com.example.rebootBook
 
-import android.content.Context
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel
@@ -12,7 +11,7 @@ import java.io.IOException
 
 data class EventItem(val title: String, val imageUrl: String, val url: String)
 
-class EventCrawlerTask(private val context: Context) {
+class EventCrawlerTask() {
     private val scope = CoroutineScope(Dispatchers.IO)
 
     fun execute(onComplete: (List<EventItem>) -> Unit) {

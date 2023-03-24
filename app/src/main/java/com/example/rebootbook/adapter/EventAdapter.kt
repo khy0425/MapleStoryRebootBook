@@ -1,4 +1,4 @@
-package com.example.rebootbook
+package com.example.rebootBook.adapter
 
 import android.content.Intent
 import android.net.Uri
@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.rebootBook.EventItem
+import com.example.rebootBook.R
 
 class EventAdapter : ListAdapter<EventItem, EventAdapter.ViewHolder>(EventDiffCallback()) {
 

@@ -1,4 +1,4 @@
-package com.example.rebootbook
+package com.example.rebootBook
 
 import org.junit.Test
 

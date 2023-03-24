@@ -1,11 +1,13 @@
-package com.example.rebootbook
+package com.example.rebootBook
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.rebootbook.databinding.ActivityMainBinding
+import com.example.rebootBook.adapter.EventAdapter
+import com.example.rebootBook.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)
+        supportActionBar?.hide()
 
         eventAdapter = EventAdapter()
         binding.recyclerView.apply {
@@ -26,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             adapter = eventAdapter
         }
 
-        eventCrawlerTask = EventCrawlerTask(this)
+        eventCrawlerTask = EventCrawlerTask()
         eventCrawlerTask.execute { eventItems ->
             eventAdapter.submitList(eventItems)
         }
@@ -44,6 +47,8 @@ class MainActivity : AppCompatActivity() {
         binding.navigationView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.nav_item1 -> {
+                    val intent = Intent(this, UnionHuntingActivity::class.java)
+                    startActivity(intent)
                     // Handle item 1 click
                 }
                 R.id.nav_item2 -> {
