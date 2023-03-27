@@ -5,18 +5,12 @@
     android:id="@+id/activity_hunting"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
     tools:context=".UnionHuntingActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <include
+        android:id="@+id/toolbar_with_back_button"
+        layout="@layout/toolbar_with_back_button"/>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
@@ -24,9 +18,9 @@
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_with_back_button"
         app:tabIndicatorColor="@android:color/white"
-        app:tabSelectedTextColor="@android:color/white"
+        app:tabSelectedTextColor="@android:color/black"
         app:tabTextColor="@android:color/darker_gray" />
 
     <androidx.viewpager2.widget.ViewPager2

@@ -1,44 +1,68 @@
 package com.example.rebootBook.adapter
 
+import android.graphics.Color
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ListAdapter
+import android.widget.TextView
+import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
+import com.example.rebootBook.R
 import com.example.rebootBook.dataClass.HuntingLocation
-import com.example.rebootBook.databinding.HuntingItemBinding
 
-class HuntingLocationAdapter :
-    ListAdapter<HuntingLocation, HuntingLocationAdapter.HuntingLocationViewHolder>(HuntingLocationDiffCallback()) {
+class HuntingLocationAdapter : RecyclerView.Adapter<HuntingLocationAdapter.HuntingLocationViewHolder>() {
+    private var huntingLocations: List<HuntingLocation> = emptyList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HuntingLocationViewHolder {
-        val inflater = LayoutInflater.from(parent.context)
-        val binding = HuntingItemBinding.inflate(inflater, parent, false)
-        return HuntingLocationViewHolder(binding)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.hunting_item, parent, false)
+        return HuntingLocationViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: HuntingLocationViewHolder, position: Int) {
-        val huntingLocation = getItem(position)
-        holder.bind(huntingLocation)
+        holder.bind(huntingLocations[position])
     }
 
-    inner class HuntingLocationViewHolder(
-        private val binding: HuntingItemBinding
-    ) : RecyclerView.ViewHolder(binding.root) {
+    override fun getItemCount() = huntingLocations.size
 
-        fun bind(item: HuntingLocation) {
-            binding.item = item
-            binding.executePendingBindings()
-        }
+    fun submitList(newHuntingLocations: List<HuntingLocation>) {
+        huntingLocations = newHuntingLocations
+        notifyDataSetChanged()
     }
 
-    class HuntingLocationDiffCallback : DiffUtil.ItemCallback<HuntingLocation>() {
-        override fun areItemsTheSame(oldItem: HuntingLocation, newItem: HuntingLocation): Boolean {
-            return oldItem.name == newItem.name
+    inner class HuntingLocationViewHolder(private val view: View) : RecyclerView.ViewHolder(view), View.OnClickListener {
+        private val huntingLocationName: TextView = view.findViewById(R.id.hunting_location_name)
+        private val huntingLocationDescription: TextView = view.findViewById(R.id.hunting_location_description)
+
+        init {
+            view.setOnClickListener(this)
         }
 
-        override fun areContentsTheSame(oldItem: HuntingLocation, newItem: HuntingLocation): Boolean {
-            return oldItem == newItem
+        fun bind(huntingLocation: HuntingLocation) {
+            huntingLocationName.text = huntingLocation.name
+            huntingLocationDescription.text = huntingLocation.description
+
+            itemView.setOnClickListener {
+                huntingLocationDescription.isVisible = !huntingLocationDescription.isVisible
+
+                itemView.setBackgroundColor(
+                    if(huntingLocationDescription.isVisible)
+                        ContextCompat.getColor(itemView.context, R.color.light_gray)
+                    else
+                        Color.TRANSPARENT
+                )
+            }
+
+            huntingLocationName.text = huntingLocation.name
+            huntingLocationDescription.text = huntingLocation.description
+        }
+
+        override fun onClick(v: View) {
+            if (huntingLocationDescription.visibility == View.GONE) {
+                huntingLocationDescription.visibility = View.VISIBLE
+            } else {
+                huntingLocationDescription.visibility = View.GONE
+            }
         }
     }
 }

@@ -110,6 +110,20 @@
     <string name="union_hunting_base_15_description">"여기도 예외는 없습니다. 헤이븐 퀘스트는 무조건 해야 합니다."</string>
 
 
+    <string name="character_level">캐릭터 레벨 : </string>
+    <string name="monster_level">몬스터 레벨 : </string>
+    <string name="monster_timer">6분당 마릿수 : </string>
+
+    <string name="get_meso_rate">메소 획득량 : </string>
+    <string name="get_item_rate">아이템 드롭률 : 67%</string>
+    <string name="exp_coupon">경험치 쿠폰 비율</string>
+
+    <string name="meso_doping">재물 획득의 비약 사용 여부</string>
+
+    <string name="calculate">계산하기</string>
+    <string name="result">결과 : </string>
+    <string name="meso_result">메소 획득 가능 량 : </string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>
