@@ -21,5 +21,13 @@
     <style name="AppTheme.NoActionBar.NavigationView" parent="Widget.MaterialComponents.NavigationView">
         <item name="itemIconTint">@null</item>
     </style>
+    <style name="NavigationItemText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_navigation_item_text</item>
+    </style>
+
+    <style name="NavigationItemTextSelected" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_navigation_item_text_selected</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>
 

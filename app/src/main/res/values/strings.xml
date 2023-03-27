@@ -124,6 +124,120 @@
     <string name="result">결과 : </string>
     <string name="meso_result">메소 획득 가능 량 : </string>
 
+    <string name="link_description">링크란?\n- 내가 보유한 다른 캐릭터의 고유 능력을 자신이 원하는 캐릭터에 최대 12개 적용시키는 시스템\n- 링크 스킬을 적용하면 추가 경험치, 추가 공격력 등 육성에 도움이 됩니다\n\n링크 정보\n- 캐릭터 레벨 70 달성시 링크 스킬 1레벨, 120 달성시 링크스킬 2레벨 (단, 제로는 챕터를 완료할때 마다 레벨이 증가함)</string>
+
+    <string name="link_header1">직업</string>
+    <string name="link_header2">스킬</string>
+    <string name="link_header3">효과(1레벨/2레벨)</string>
+
+    <!--직업 명칭-->
+    <!--경험치 관련 클래스-->
+    <string name="class_mercedes_name">메르세데스</string>
+    <string name="class_evan_name">에반</string>
+    <string name="class_aran_name">아란</string>
+
+    <!--데미지 관련 클래스-->
+    <string name="class_magician_name">모험가 (마법사)</string>
+    <string name="class_archer_name">모험가 (궁수)</string>
+    <string name="class_thief_name">모험가 (도적)</string>
+    <string name="class_pirate_name">모험가 (해적)</string>
+    <string name="class_avenger_name">데몬어벤져</string>
+    <string name="class_slayer_name">데몬슬레이어</string>
+    <string name="class_luminous_name">루미너스</string>
+    <string name="class_phantom_name">팬텀</string>
+    <string name="class_kinesis_name">키네시스</string>
+    <string name="class_angelic_buster_name">엔젤릭버스터</string>
+    <string name="class_zero_name">제로</string>
+    <string name="class_zenon_name">제논</string>
+    <string name="class_cadena_name">카데나</string>
+    <string name="class_illium_name">일리움</string>
+    <string name="class_ark_name">아크</string>
+    <string name="class_hoyoung_name">호영</string>
+    <string name="class_adele_name">아델</string>
+    <string name="class_kain_name">카인</string>
+    <string name="class_lara_name">라라</string>
+    <string name="class_khali_name">칼리</string>
+
+    <!--기타 클래스-->
+    <string name="class_warrior_name">모험가 (전사)</string>
+    <string name="class_mihile_name">미하일</string>
+    <string name="class_resistance_name">레지스탕스</string>
+    <string name="class_cygnus_name">시그너스</string>
+    <string name="class_kaiser_name">카이저</string>
+    <string name="class_eunwol_name">은월</string>
+
+    <!--링크 스킬 명칭-->
+    <!--경험치 관련 링크-->
+    <string name="link_mercedes_name">엘프의 축복</string>
+    <string name="link_evan_name">룬 퍼시스턴스</string>
+    <string name="link_aran_name">콤보 킬 어드밴티지</string>
+
+    <!--데미지 관련 링크-->
+    <string name="link_magician_name">임피리컬 널리지</string>
+    <string name="link_archer_name">어드벤쳐러 큐리어스</string>
+    <string name="link_thief_name">시프 커닝</string>
+    <string name="link_pirate_name">파이렛 블레스</string>
+    <string name="link_avenger_name">와일드 레이지</string>
+    <string name="link_slayer_name">데몬스 퓨리</string>
+    <string name="link_luminous_name">퍼미에이드</string>
+    <string name="link_phantom_name">데들리 인스팅트</string>
+    <string name="link_kinesis_name">판단</string>
+    <string name="link_angelic_buster_name">소울 컨트렉트</string>
+    <string name="link_zero_name">륀느의 축복</string>
+    <string name="link_zenon_name">하이브리드 로직</string>
+    <string name="link_cadena_name">인텐시브 어썰트</string>
+    <string name="link_illium_name">전투의 흐름</string>
+    <string name="link_ark_name">무아</string>
+    <string name="link_hoyoung_name">자신감</string>
+    <string name="link_adele_name">노블레스</string>
+    <string name="link_kain_name">프라이어 프리퍼레이션</string>
+    <string name="link_lara_name">자연의 벗</string>
+    <string name="link_khali_name">이네이트 기프트</string>
+
+    <!--기타 링크-->
+    <string name="link_warrior_name">인빈서블 빌리프</string>
+    <string name="link_mihile_name">빛의 수호</string>
+    <string name="link_resistance_name">스피릿 오브 프리덤</string>
+    <string name="link_cygnus_name">시그너스 블레스</string>
+    <string name="link_kaiser_name">아이언 월</string>
+    <string name="link_eunwol_name">구사일생</string>
+
+    <!--링크 효과-->
+    <!--경험치 관련 링크-->
+    <string name="link_mercedes_effect">경험치 10%/15% 추가</string>
+    <string name="link_evan_effect">룬 해방 지속시간 30%/50% 증가</string>
+    <string name="link_aran_effect">영구적으로 콤보 킬 구슬 경험치 획득량 400%/650% 증가</string>
+
+    <!--데미지 관련 링크-->
+    <string name="link_magician_effect">공격한 적 중 최대 HP가\n가장 높은 적의 약점을 \n15%/17%/19%/21%/\n23%/25% 확률로 파악,\n파악한 약점은 10초 동안\n지속되며 최대 3회까지 중첩, \n중첩 당 데미지 1%/1%/2%\n/2%/3%/3%, \n방어율 무시 1%/1%/2%/2%/\n3%/3% 증가</string>
+    <string name="link_archer_effect">몬스터 컬렉션 등록 확률 \n10%/15%/20%/25%/\n30%/35%, \n크리티컬 확률 \n3%/4%/5%/7%/8%/\n10% 증가</string>
+    <string name="link_thief_effect">적에게 상태이상을 \n적용시키면 10초 동안 \n데미지 3%/6%/9%/\n12%/15%/18% 증가, \n재발동 대기시간 20초</string>
+    <string name="link_pirate_effect">올스탯 20/30/40/50/\n60/70,\nHP,MP 350/525/700/\n875/1050/1225, \n데미지 흡수 \n5%/7%/9%/11%/13%/\n15% 증가</string>
+    <string name="link_avenger_effect">데미지 5%/10% 증가</string>
+    <string name="link_slayer_effect">보스 몬스터 공격 시\n 데미지 10%/15% 증가</string>
+    <string name="link_luminous_effect">방어율 무시 \n10%/15% 증가</string>
+    <string name="link_phantom_effect">크리티컬 확률 \n10%/15% 증가</string>
+    <string name="link_kinesis_effect">크리티컬 데미지 \n2%/4% 증가</string>
+    <string name="link_angelic_buster_effect">10초간 스킬 데미지 \n30%/45% 증가</string>
+    <string name="link_zero_effect">피격 데미지 \n3%/6%/9%/\n15% 감소, \n공격 시 대상의 방어율 \n2%/4%/6%/10%\n무시</string>
+    <string name="link_zenon_effect">올스탯 5%/10% 증가</string>
+    <string name="link_cadena_effect">낮은 레벨 몬스터 \n공격시 데미지 3%/6%, \n상태이상 공격시 \n데미지 3%/6%</string>
+    <string name="link_illium_effect">일정거리 이동시 데미지 \n1%/2% 증가, \n최대 6회 중첩 가능</string>
+    <string name="link_ark_effect">전투 상태가 5초 지속되면 \n발동되며 최대 \n5회 중첩 가능, \n지속시간 5초 \n발동 시 데미지 1% 증가, \n각 중첩당 데미지 1\u002f2%\n 증가</string>
+    <string name="link_hoyoung_effect">방어율 무시 \n5/10% 추가, \nHP가 100%인 몬스터 \n공격 시 데미지 7/14% \n증가</string>
+    <string name="link_adele_effect">같은 맵에 있는 \n자신을 포함한 \n파티원 1명 당 \n데미지 1\u002f2% 증가 \n(최대 4/8%까지 증가),\n보스 몬스터 공격 시 \n데미지 2/4% 증가</string>
+    <string name="link_kain_effect">적 8명 처치, \n혹은 보스 몬스터에게 \n5번 공격 적중 시 \n사전 준비 1번 완료, \n사전 준비를 5번 마치면 \n20초 동안 데미지 \n9/17% 증가, \n재발동 대기시간 40초</string>
+    <string name="link_lara_effect">데미지 3/5% 증가, \n일반 몬스터 20마리 \n처치 시30초 동안 \n일반 몬스터 공격 시 \n데미지 7/11% 증가, \n재발동 대기 시간 30초</string>
+    <string name="link_khali_effect">데미지 5% 증가, \n공격 시 100% 확률로 \n5초 동안 매초 최대 HP/MP의 2% 회복, \n재발동 대기시간 30초</string>
+
+    <!--기타 링크-->
+    <string name="link_warrior_effect">3초 동안 1초마다 \n최대 HP의 \n20%/23%/26%/29%/32%/\n35% 회복, \n재발동 대기시간 410/370/330/290/\n250/210초 \n(HP가 15% 이하일 때 자동 발동)</string>
+    <string name="link_mihile_effect">10/15초 동안 \n상태 이상 내성 100 증가</string>
+    <string name="link_resistance_effect">부활시 1\u002f2\u002f3\u002f4\u002f5\u002f6\u002f7\n\u002f8초 동안 피해를 받지 않음</string>
+    <string name="link_cygnus_effect">공격력·마력 \n7/9/11/13/\n15/17/19/21/23/25, \n상태이상 내성 \n2/5/7/10/12/\n15/17/20/22/25, \n모든 속성 저항 \n2%/5%/7%/10%/\n12%/15%/17%/20%/\n22%/25% 증가</string>
+    <string name="link_kaiser_effect">최대 HP 10%/15% 증가</string>
+    <string name="link_eunwol_effect">사망에 이르는 공격을 당할 시,\n 5%/10% 확률로 생존</string>
+
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 </resources>

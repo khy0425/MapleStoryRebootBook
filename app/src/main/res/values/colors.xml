@@ -17,4 +17,7 @@
     <color name="colorPrimary">#ECE5F4</color>
     <color name="colorPrimaryVariant">#ECE5F4</color>
     <color name="colorSecondary">#ECE5F4</color>
+
+    <color name="color_navigation_item_text">#808080</color>
+    <color name="color_navigation_item_text_selected">#000000</color>
 </resources>

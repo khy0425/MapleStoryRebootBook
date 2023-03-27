@@ -1,5 +1,6 @@
 package com.example.rebootBook
 
+import android.util.Log
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel
@@ -20,12 +21,12 @@ class EventCrawlerTask() {
 
             try {
                 val document = Jsoup.connect("https://maplestory.nexon.com/News/Event").get()
-                val eventList = document.select("div.event_board div.event_box")
+                val eventList = document.select("div.event_board ul li")
 
                 for (eventElement: Element in eventList) {
-                    val title = eventElement.select("span.title").text()
-                    val imageUrl = eventElement.select("img").attr("src")
-                    val url = "https://maplestory.nexon.com${eventElement.select("a").attr("href")}"
+                    val title = eventElement.select("dd.data a").text()
+                    val imageUrl = eventElement.select("dt img").attr("src")
+                    val url = "https://maplestory.nexon.com${eventElement.select("dd.data a").attr("href")}"
 
                     eventItems.add(EventItem(title, imageUrl, url))
                 }

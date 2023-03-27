@@ -36,6 +36,9 @@
         <activity android:name=".CalculatorActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
+        <activity android:name=".UnionEffectActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
     </application>
 
 </manifest>

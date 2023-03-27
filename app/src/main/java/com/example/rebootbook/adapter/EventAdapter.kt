@@ -2,6 +2,7 @@ package com.example.rebootBook.adapter
 
 import android.content.Intent
 import android.net.Uri
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,6 +19,7 @@ class EventAdapter : ListAdapter<EventItem, EventAdapter.ViewHolder>(EventDiffCa
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.event_item, parent, false)
+        Log.d("EventAdapter", "ViewHolder created")
         return ViewHolder(view)
     }
 

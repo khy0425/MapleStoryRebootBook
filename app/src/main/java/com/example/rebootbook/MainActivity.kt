@@ -2,6 +2,8 @@ package com.example.rebootBook
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.SpannableString
+import android.text.style.TextAppearanceSpan
 import android.util.Log
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
@@ -56,6 +58,26 @@ class MainActivity : AppCompatActivity() {
         toggle.syncState()
 
         binding.navigationView.setNavigationItemSelectedListener { menuItem ->
+            for (i in 0 until binding.navigationView.menu.size()) {
+                val item = binding.navigationView.menu.getItem(i)
+                val title = SpannableString(item.title)
+                if (item.itemId == menuItem.itemId) {
+                    title.setSpan(
+                        TextAppearanceSpan(this, R.style.NavigationItemTextSelected),
+                        0,
+                        title.length,
+                        0
+                    )
+                } else {
+                    title.setSpan(
+                        TextAppearanceSpan(this, R.style.NavigationItemText),
+                        0,
+                        title.length,
+                        0
+                    )
+                }
+                item.title = title
+            }
             when (menuItem.itemId) {
                 R.id.nav_item1 -> {
                     val intent = Intent(this, UnionHuntingActivity::class.java)
@@ -63,9 +85,11 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.nav_item2 -> {
-
+                    val intent = Intent(this, UnionEffectActivity::class.java)
+                    startActivity(intent)
                 }
                 R.id.nav_item3 -> {
+//                    TODO() : 직업별 스킬 코어 우선 순위
 
                 }
 
@@ -75,19 +99,19 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.nav_item5 -> {
-
+//                  TODO() : 무기 추옵 정리
                 }
 
                 R.id.nav_item6 -> {
-
+//                  TODO() : 무토 레시피
                 }
 
                 R.id.nav_item7 -> {
-
+//                  TODO() : 보스 결정석 메소 정리
                 }
 
                 R.id.nav_item8 -> {
-
+//                  TODO() : 주요 레시피 정리
                 }
             }
             binding.drawerLayout.closeDrawer(GravityCompat.START)
