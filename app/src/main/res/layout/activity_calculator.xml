@@ -36,7 +36,7 @@
             <EditText
                 android:id="@+id/character_level_edit_text"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:hint="230"
                 android:inputType="number"
                 android:textSize="18sp" />
@@ -57,7 +57,7 @@
         <EditText
             android:id="@+id/monster_level_edit_text"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:hint="226"
             android:inputType="number"
             android:layout_marginBottom="12dp"
@@ -79,7 +79,7 @@
             <EditText
                 android:id="@+id/six_minute_count_edit_text"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:hint="1400"
                 android:inputType="number"
                 android:layout_marginBottom="12dp"
@@ -106,7 +106,7 @@
                 <EditText
                     android:id="@+id/meso_drop_rate_text_view"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:inputType="number"
                     android:hint="1000"
                     android:textSize="18sp" />
@@ -143,14 +143,48 @@
             android:text="@string/meso_doping"
             android:layout_marginBottom="8dp" />
 
-        <Button
-            android:id="@+id/calculate_button"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/calculate"
-            android:textColor="@color/black"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="15dp" />
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/calculate_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:drawablePadding="8dp"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/description_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculation_description"
+                android:textColor="@android:color/holo_green_dark"
+                android:textStyle="bold"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:drawablePadding="8dp"
+                android:padding="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+
 
 
     </LinearLayout>
@@ -162,6 +196,15 @@
         android:layout_height="wrap_content"
         android:text="@string/result"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="12sp"
         android:layout_margin="8dp" />
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculator_description"
+        android:textColor="@android:color/black"
+        android:visibility="gone"/>
+
 </LinearLayout>

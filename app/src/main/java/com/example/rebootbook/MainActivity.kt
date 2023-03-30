@@ -107,6 +107,8 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.nav_item7 -> {
+                    val intent = Intent(this, BossCrystalPriceActivity::class.java)
+                    startActivity(intent)
 //                  TODO() : 보스 결정석 메소 정리
                 }
 

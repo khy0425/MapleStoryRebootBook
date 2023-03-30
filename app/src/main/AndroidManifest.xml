@@ -39,6 +39,9 @@
         <activity android:name=".UnionEffectActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
+        <activity android:name=".BossCrystalPriceActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
     </application>
 
 </manifest>

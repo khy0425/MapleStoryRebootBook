@@ -11,6 +11,8 @@
     <string name="item7_title">보스 결정석 메소 정리</string>
     <string name="item8_title">주요 레시피 정리</string>
 
+
+
     <string name="union_hunting_zero_1_description">보통 30~40 사이에 끝나는 경우가 많으며, 몇몇 직업의 경우 수행 않을 시 아예 다른 곳으로 갈 수 없으니 맘편히 수행하세요. 참고로, 몇몇 캐릭터는 퀘스트에 [필수] 라고 해놓고 실제로는 수행하지 않아도 별 상관이 없는 경우도 있습니다.</string>
     <string name="union_hunting_zero_2_description">"골렘류는 15~19, 아이류는 26~29 레벨입니다. 이동이 귀찮다면 골렘만으로 30을 찍어도 상관 없지만, 체감상 아이류가 훨씬 빠르긴 합니다. 이상한 곳에서 나왔다거나 할 경우 구글링 통해서 빅토리아 아일랜드로 오는 길 찾으시면 됩니다.\n" +
                         "\n" +
@@ -119,6 +121,10 @@
     <string name="exp_coupon">경험치 쿠폰 비율</string>
 
     <string name="meso_doping">재물 획득의 비약 사용 여부</string>
+
+    <string name="calculation_description">사용 설명서</string>
+    <string name="search_boss_name">보스 이름으로 검색</string>
+    <string name="calculator_description">6분측정 마릿수에는 전투분석을 키고 6분동안 사냥해서 나온 마릿수를 입력하시면 됩니다.\n\n메획은 기본 100%와 재획비를 제외한 템메획, 팬텀 유니온, 어빌, 몬라 효과를 합산한 수치를 입력해 주세요. 쓸/찐심, 어빌, 템아획, 몬라 효과를 합산한 수치를 입력해 주세요.\n\n계산 결과는 엘리트 몬스터/엘리트 보스가 나오지 않으며, 몬스터가 떨어트린 메소를 전부 줍는다고 가정한 결과입니다.</string>
 
     <string name="calculate">계산하기</string>
     <string name="result">결과 : </string>
@@ -240,4 +246,106 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--보스 명칭-->
+    <string name="zakum_name">자쿰</string>
+    <string name="pinkbean_name">핑크빈</string>
+    <string name="horntail_name">혼테일</string>
+    <string name="kaung_name">카웅</string>
+    <string name="cygnus_name">시그너스</string>
+    <string name="gns_name">가디언 엔젤 슬라임</string>
+    <string name="papulatus_name">파풀라투스</string>
+    <string name="dusk_name">더스크</string>
+    <string name="djunkel_name">듄켈</string>
+    <string name="kalos_name">칼로스</string>
+    <string name="hilla_name">힐라</string>
+    <string name="v_hilla_name">진 힐라</string>
+    <string name="leon_name">반 레온</string>
+    <string name="akarum_name">아카이럼</string>
+    <string name="banban_name">반반</string>
+    <string name="pierre_name">피에르</string>
+    <string name="bq_name">블러디 퀸</string>
+    <string name="vellum_name">벨룸</string>
+    <string name="serene_name">세렌</string>
+    <string name="magnus_name">매그너스</string>
+    <string name="will_name">윌</string>
+    <string name="damien_name">데미안</string>
+    <string name="lucid_name">루시드</string>
+    <string name="lotus_name">스우</string>
+    <string name="kaling_name">카링</string>
+    <string name="bm_name">검은 마법사</string>
+
+    <string name="uruse_name">우르스</string>
+
+    <!--난이도-->
+    <string name="diff_easy">이지</string>
+    <string name="diff_normal">노말</string>
+    <string name="diff_hard">하드</string>
+    <string name="diff_chaos">카오스</string>
+    <string name="diff_expert">익스퍼트</string>
+
+    <!--결정석 가격-->
+    <!--일간 보스-->
+    <string name="easy_zakum_price">599,175</string>
+    <string name="normal_zakum_price">1,834,985</string>
+    <string name="easy_papulatus_price">2,050,675</string>
+    <string name="easy_magnus_price">2,163,025</string>
+    <string name="normal_hilla_price">2,396,715</string>
+    <string name="easy_horntail_price">2,642,370</string>
+    <string name="normal_banban_price">2,900,015</string>
+    <string name="normal_vellum_price">2,900,015</string>
+    <string name="normal_bq_price">2,900,015</string>
+    <string name="normal_pierre_price">2,900,015</string>
+    <string name="normal_horntail_price">3,033,330</string>
+    <string name="easy_leon_price">3,169,635</string>
+    <string name="easy_akarum_price">3,451,245</string>
+    <string name="normal_kaung_price">3,744,850</string>
+    <string name="chaos_horntail_price">4,050,430</string>
+    <string name="normal_pinkbean_price">4,207,720</string>
+    <string name="noraml_leon_price">4,368,005</string>
+    <string name="hard_leon_price">7,339,920</string>
+    <string name="normal_akarum_price">7,551,135</string>
+    <string name="normal_magnus_price">7,765,330</string>
+    <string name="normal_papulatus_price">7,982,530</string>
+
+    <!--주간 보스-->
+    <string name="easy_cygnus_price">27,466,970</string>
+    <string name="hard_hilla_price">34,682,445</string>
+    <string name="chaos_pinkbean_price">39,615,550</string>
+    <string name="normal_cygnus_price">45,195,650</string>
+    <string name="chaos_zakum_price">48,706,425</string>
+    <string name="chaos_bq_price">49,033,900</string>
+    <string name="chaos_banban_price">49,090,770</string>
+    <string name="chaos_pierre_price">49,194,660</string>
+    <string name="hard_magnus_price">57,895,115</string>
+    <string name="chaos_vellum_price">62,951,010</string>
+    <string name="chaos_papulatus_price">133,629,685</string>
+    <string name="normal_lotus_price">169,712,830</string>
+    <string name="normal_demien_price">177,589,265</string>
+    <string name="normal_gas_price">234,679,370</string>
+    <string name="easy_lucid_price">240,291,595</string>
+    <string name="easy_will_price">260,695,635</string>
+    <string name="normal_lucid_price">287,513,130</string>
+    <string name="normal_will_price">331,557,315</string>
+    <string name="normal_dusk_price">355,272,810</string>
+    <string name="normal_djunkel_price">383,007,060</string>
+    <string name="hard_demien_price">562,403,065</string>
+    <string name="hard_lotus_price">591,470,960</string>
+    <string name="hard_lucid_price">655,478,275</string>
+    <string name="hard_will_price">725,192,415</string>
+    <string name="normal_v_hilla_price">740,561,880</string>
+    <string name="chaos_gas_price">777,460,705</string>
+    <string name="chaos_dusk_price">800,868,760</string>
+    <string name="hard_djunkel_price">843,046,400</string>
+    <string name="hard_v_hilla_price">950,797,260</string>
+    <string name="normal_serene_price">984,523,760</string>
+    <string name="hard_serene_price">1,339,128,105</string>
+    <string name="chaos_kalos_price">1,500,000,000</string>
+    <string name="normal_kaling_price">1,750,000,000</string>
+    <string name="expert_serene_price">5,356,512,420</string>
+
+    <!--월간 보스-->
+    <string name="hard_bm_price">7,094,049,285</string>
+    <string name="expert_bm_price">28,376,197,140</string>
+    <string name="location_description">*사냥터를 터치하면 설명이 나타납니다.</string>
 </resources>
