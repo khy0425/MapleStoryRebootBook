@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RebootBook"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/GOOGLE_AD_APP_ID" />
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
@@ -40,6 +43,9 @@
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
         <activity android:name=".BossCrystalPriceActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
+        <activity android:name=".QuestHelperActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
     </application>

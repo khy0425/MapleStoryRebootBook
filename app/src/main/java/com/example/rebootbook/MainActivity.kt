@@ -1,10 +1,12 @@
 package com.example.rebootBook
 
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.style.TextAppearanceSpan
 import android.util.Log
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
@@ -12,6 +14,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.rebootBook.adapter.EventAdapter
 import com.example.rebootBook.databinding.ActivityMainBinding
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdSize
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -20,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var toggle: ActionBarDrawerToggle
     private lateinit var swipeRefreshLayout: SwipeRefreshLayout
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -32,6 +37,11 @@ class MainActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = eventAdapter
         }
+
+        val keyManager = KeyManager(this)
+        val googleAdKey = "ca-app-pub-1075071967728463/1125189187"
+        val encryptedGoogleAdKey = keyManager.encrypt(googleAdKey)
+        keyManager.saveKey("googleAdKey", encryptedGoogleAdKey)
 
         eventCrawlerTask = EventCrawlerTask()
         eventCrawlerTask.execute { eventItems ->
@@ -89,8 +99,7 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 R.id.nav_item3 -> {
-//                    TODO() : 직업별 스킬 코어 우선 순위
-
+                    // TODO: 직업별 스킬 코어 우선 순위
                 }
 
                 R.id.nav_item4 -> {
@@ -99,26 +108,38 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 R.id.nav_item5 -> {
-//                  TODO() : 무기 추옵 정리
+                    // TODO: 무기 추옵 정리
                 }
 
                 R.id.nav_item6 -> {
-//                  TODO() : 무토 레시피
+                    // TODO: 주간 퀘스트 헬퍼
+                    val intent = Intent(this, QuestHelperActivity::class.java)
+                    startActivity(intent)
                 }
 
                 R.id.nav_item7 -> {
                     val intent = Intent(this, BossCrystalPriceActivity::class.java)
                     startActivity(intent)
-//                  TODO() : 보스 결정석 메소 정리
+                    // TODO: 보스 결정석 메소 정리
                 }
 
                 R.id.nav_item8 -> {
-//                  TODO() : 주요 레시피 정리
+                    // TODO: 주요 레시피 정리
                 }
             }
             binding.drawerLayout.closeDrawer(GravityCompat.START)
             true
         }
+
+        // nav_3, nav_5, nav_8 버튼을 숨김
+        binding.navigationView.menu.findItem(R.id.nav_item3).isVisible = false
+        binding.navigationView.menu.findItem(R.id.nav_item5).isVisible = false
+        binding.navigationView.menu.findItem(R.id.nav_item8).isVisible = false
+
+//        binding.adView.adUnitId = BuildConfig.GOOGLE_AD_UNIT_ID
+
+        val adRequest = AdRequest.Builder().build()
+        binding.adView.loadAd(adRequest)
     }
 
     private fun refreshEvents() {

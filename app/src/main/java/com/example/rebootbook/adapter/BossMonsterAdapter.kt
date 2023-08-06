@@ -1,44 +1,101 @@
 package com.example.rebootBook.adapter
 
-import android.graphics.Color
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.ListAdapter
-import com.example.rebootBook.R
+import android.widget.Filter
+import android.widget.Filterable
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.rebootBook.dataClass.BossMonster
-import com.example.rebootBook.viewModel.BossCrystalPriceViewHolder
+import com.example.rebootBook.databinding.BossMonsterItemBinding
+import java.util.*
 
-class BossMonsterAdapter : ListAdapter<BossMonster, BossCrystalPriceViewHolder>(DIFF_CALLBACK) {
+class BossMonsterAdapter(
+    private val bossMonsters: List<BossMonster>,
+    private val listener: (BossMonster) -> Unit
+) : RecyclerView.Adapter<BossMonsterAdapter.ViewHolder>(), Filterable {
 
-    companion object {
-        private val DIFF_CALLBACK = object : DiffUtil.ItemCallback<BossMonster>() {
-            override fun areItemsTheSame(oldItem: BossMonster, newItem: BossMonster): Boolean {
-                return oldItem.name == newItem.name && oldItem.price == newItem.price
+    private var filteredBossList = bossMonsters.toMutableList()
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val inflater = LayoutInflater.from(parent.context)
+        val binding = BossMonsterItemBinding.inflate(inflater, parent, false)
+        return ViewHolder(binding)
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bind(filteredBossList[position])
+    }
+
+    override fun getItemCount() = filteredBossList.size
+
+    fun filter(query: String) {
+        filter.filter(query)
+    }
+
+    fun filterByBossType(bossType: BossMonster.BossType) {
+        filteredBossList = bossMonsters.filter { it.bossType == bossType }.toMutableList()
+        notifyDataSetChanged()
+    }
+
+    override fun getFilter(): Filter {
+        return object : Filter() {
+            override fun performFiltering(constraint: CharSequence?): FilterResults {
+                val queryString = constraint?.toString()?.toLowerCase(Locale.ROOT)
+                val filterResults = FilterResults()
+
+                filterResults.values = if (queryString == null || queryString.isEmpty()) {
+                    bossMonsters
+                } else {
+                    bossMonsters.filter { bossMonster ->
+                        bossMonster.name.toLowerCase(Locale.ROOT).contains(queryString) ||
+                                bossMonster.diff.toLowerCase(Locale.ROOT).contains(queryString) ||
+                                bossMonster.dropItems.any { dropItem ->
+                                    dropItem.name.toLowerCase(Locale.ROOT).contains(queryString)
+                                }
+                    }
+                }
+                return filterResults
             }
 
-            override fun areContentsTheSame(oldItem: BossMonster, newItem: BossMonster): Boolean {
-                return oldItem == newItem
+            override fun publishResults(constraint: CharSequence?, results: FilterResults?) {
+                filteredBossList = results?.values as MutableList<BossMonster>
+                notifyDataSetChanged()
             }
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BossCrystalPriceViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_boss_monster, parent, false)
-        return BossCrystalPriceViewHolder(view)
-    }
+    inner class ViewHolder(private val binding: BossMonsterItemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
 
-    override fun onBindViewHolder(holder: BossCrystalPriceViewHolder, position: Int) {
-        val bossMonster = getItem(position)
-        holder.imageView.setImageResource(bossMonster.imageResId)
-        holder.nameTextView.text = bossMonster.name
-        holder.diffTextView.text = bossMonster.diff
-        holder.priceTextView.text = bossMonster.price
+        init {
+            itemView.setOnClickListener {
+                if (binding.dripItemsLinearLayout.visibility == View.GONE) {
+                    binding.dripItemsLinearLayout.visibility = View.VISIBLE
+                    binding.bossDesc.visibility = View.VISIBLE
+                } else {
+                    binding.dripItemsLinearLayout.visibility = View.GONE
+                    binding.bossDesc.visibility = View.GONE
+                }
+            }
+        }
 
-        if (position % 2 == 0) {
-            holder.itemView.setBackgroundColor(Color.parseColor("#FFFFFF"))
-        } else {
-            holder.itemView.setBackgroundColor(Color.parseColor("#F0F0F0"))
+        fun bind(bossMonster: BossMonster) {
+            binding.ivBossImage.setImageResource(bossMonster.imageResId)
+            binding.tvBossName.text = bossMonster.name
+            binding.tvBossDifficulty.text = bossMonster.diff
+            binding.tvBossPrice.text = bossMonster.price
+            binding.bossDesc.text = bossMonster.bossDesc
+
+            if (bossMonster.dropItems.isNotEmpty()) {
+                binding.dropItemsRecyclerView.layoutManager = GridLayoutManager(itemView.context, 2)
+                binding.dropItemsRecyclerView.adapter = DropItemAdapter(bossMonster.dropItems)
+
+            } else {
+                binding.dripItemsLinearLayout.visibility = View.GONE
+                binding.bossDesc.visibility = View.GONE
+            }
         }
     }
 }

@@ -4,38 +4,28 @@ import android.content.Context
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.EditText
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
+import androidx.databinding.DataBindingUtil
+import com.example.rebootBook.databinding.ActivityCalculatorBinding
 import java.lang.Math.abs
 
 class CalculatorActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityCalculatorBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calculator)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_calculator)
+        setContentView(binding.root)
 
-        initViews()
+        initViews(binding)
 
-        val characterLevelEditText: EditText = findViewById(R.id.character_level_edit_text)
-        val monsterLevelEditText: EditText = findViewById(R.id.monster_level_edit_text)
-        val sixMinuteCountEditText: EditText = findViewById(R.id.six_minute_count_edit_text)
-        val mesoGainEditText: EditText = findViewById(R.id.meso_drop_rate_text_view)
-        val wealthPotionCheckbox: CheckBox = findViewById(R.id.wealth_potion_checkbox)
-        val calculateButton: Button = findViewById(R.id.calculate_button)
-        val calculationDescriptionButton: Button = findViewById(R.id.description_button)
-        val descriptionText: TextView = findViewById(R.id.description_text)
-        val resultTextView: TextView = findViewById(R.id.result_text_view)
-
-        calculateButton.setOnClickListener {
-            val characterLevel = characterLevelEditText.text.toString().toDoubleOrNull() ?: 0.0
-            val monsterLevel = monsterLevelEditText.text.toString().toDoubleOrNull() ?: 0.0
-            val sixMinuteCount = sixMinuteCountEditText.text.toString().toDoubleOrNull() ?: 0.0
-            val mesoGain = mesoGainEditText.text.toString().toDoubleOrNull() ?: 0.0
-            val wealthPotion = wealthPotionCheckbox.isChecked
+        binding.calculateButton.setOnClickListener {
+            val characterLevel = binding.characterLevelEditText.text.toString().toDoubleOrNull() ?: 0.0
+            val monsterLevel = binding.monsterLevelEditText.text.toString().toDoubleOrNull() ?: 0.0
+            val sixMinuteCount = binding.sixMinuteCountEditText.text.toString().toDoubleOrNull() ?: 0.0
+            val mesoGain = binding.mesoDropRateTextView.text.toString().toDoubleOrNull() ?: 0.0
+            val wealthPotion = binding.wealthPotionCheckbox.isChecked
 
             val mesoResult = calculateMeso(
                 characterLevel, monsterLevel, sixMinuteCount,
@@ -46,31 +36,31 @@ class CalculatorActivity : AppCompatActivity() {
             imm.hideSoftInputFromWindow(it.windowToken, 0)
 
             val resultText = formatMeso(mesoResult)
-            resultTextView.text = "결과: $resultText"
+            binding.resultTextView.text = "결과: $resultText"
         }
 
         var isDescriptionShown = false
-        calculationDescriptionButton.setOnClickListener {
+        binding.descriptionButton.setOnClickListener {
             isDescriptionShown = !isDescriptionShown
             if (isDescriptionShown) {
-                descriptionText.visibility = View.VISIBLE
+                binding.descriptionText.visibility = View.VISIBLE
             } else {
-                descriptionText.visibility = View.GONE
+                binding.descriptionText.visibility = View.GONE
             }
         }
 
     }
 
-    private fun initViews() {
+    private fun initViews(binding: ActivityCalculatorBinding) {
         // Set up toolbar with back button
-        val toolbar = findViewById<Toolbar>(R.id.toolbar_with_back_button)
-        setSupportActionBar(toolbar)
+        setSupportActionBar(binding.toolbarWithBackButton.toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
-        toolbar.setNavigationOnClickListener {
+        binding.toolbarWithBackButton.toolbar.setNavigationOnClickListener {
             // Navigate back to MainActivity
             onBackPressed()
         }
     }
+
 
     private fun calculateMeso(characterLevel: Double, monsterLevel: Double,
                               sixMinuteCount: Double, mesoGain: Double,
@@ -124,5 +114,4 @@ class CalculatorActivity : AppCompatActivity() {
 
         return result.toString()
     }
-
 }
