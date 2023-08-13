@@ -15,7 +15,6 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.rebootBook.adapter.EventAdapter
 import com.example.rebootBook.databinding.ActivityMainBinding
 import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

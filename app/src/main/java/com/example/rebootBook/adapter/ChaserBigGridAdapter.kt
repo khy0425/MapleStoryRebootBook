@@ -28,7 +28,7 @@ class ChaserBigGridAdapter(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val smallGridItems = bigGridItems[position]
-        holder.bind(smallGridItems)
+        holder.bind(smallGridItems, position)
     }
 
     override fun getItemCount() = bigGridItems.size
@@ -39,21 +39,12 @@ class ChaserBigGridAdapter(
             binding.smallGrid.layoutManager = GridLayoutManager(binding.root.context, 3)
         }
 
-        fun bind(smallGridItems: List<MidnightChaser>) {
-            smallGridItems.forEachIndexed { index, chaser ->
-                val itemBinding = ItemSmallImageBinding.bind(binding.smallGrid.getChildAt(index))
-                glide.load(
-                    when (chaser.state) {
-                        MidnightChaser.State.UNSELECTED, MidnightChaser.State.UNSELECTABLE -> chaser.smallResId
-                        MidnightChaser.State.SELECTED -> chaser.bigResId
-                    }
-                ).into(itemBinding.imageView)
-
-                itemBinding.imageView.isEnabled = chaser.state != MidnightChaser.State.UNSELECTABLE
-                itemBinding.imageView.setOnClickListener {
-                    onChaserClicked(adapterPosition, index)
-                }
+        fun bind(smallGridItems: List<MidnightChaser>, bigIndex: Int) {
+            val smallGridAdapter = ChaserSmallGridAdapter(glide) { smallIndex ->
+                onChaserClicked(bigIndex, smallIndex)
             }
+            binding.smallGrid.adapter = smallGridAdapter
+            smallGridAdapter.updateChasers(smallGridItems)
         }
     }
 }

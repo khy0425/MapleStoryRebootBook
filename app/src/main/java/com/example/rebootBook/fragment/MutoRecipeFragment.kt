@@ -1,6 +1,5 @@
 package com.example.rebootBook.fragment
 
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup

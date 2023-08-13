@@ -33,19 +33,19 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name=".UnionHuntingActivity"
+        <activity android:name="com.example.rebootBook.UnionHuntingActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name=".CalculatorActivity"
+        <activity android:name="com.example.rebootBook.CalculatorActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name=".UnionEffectActivity"
+        <activity android:name="com.example.rebootBook.UnionEffectActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name=".BossCrystalPriceActivity"
+        <activity android:name="com.example.rebootBook.BossCrystalPriceActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name=".QuestHelperActivity"
+        <activity android:name="com.example.rebootBook.QuestHelperActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
     </application>

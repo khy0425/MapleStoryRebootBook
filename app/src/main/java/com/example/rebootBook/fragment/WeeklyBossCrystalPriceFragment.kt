@@ -9,7 +9,7 @@
 //import com.example.rebootBook.R
 //import com.example.rebootBook.adapter.BossMonsterAdapter
 //import com.example.rebootBook.dataClass.com.example.rebootBook.dataClass.com.example.rebootBook.dataClass.BossMonster
-//import com.example.rebootBook.interfaces.BossCrystalPriceFilter
+//import com.example.rebootbook.interfaces.BossCrystalPriceFilter
 //
 //class WeeklyBossCrystalPriceFragment : Fragment(), BossCrystalPriceFilter {
 //
