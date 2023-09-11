@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <!-- 무기 이미지 -->
+    <ImageView
+        android:id="@+id/weaponImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/p_two_hand_sword" />
+
+    <!-- 무기 종류 -->
+    <TextView
+        android:id="@+id/weaponTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="무기종류"
+        android:layout_marginTop="8dp"
+        android:maxWidth="100dp"
+        app:layout_constraintStart_toStartOf="@id/weaponImageView"
+        app:layout_constraintEnd_toEndOf="@id/weaponImageView"
+        app:layout_constraintTop_toBottomOf="@id/weaponImageView" />
+
+    <TextView
+        android:id="@+id/weaponNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="무기이름"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="15dp"
+        android:maxWidth="70dp"
+        app:layout_constraintStart_toEndOf="@id/weaponImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <LinearLayout
+        android:id="@+id/optionLabelsLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@id/weaponNameTextView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/option1Label"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="1추"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@id/weaponNameTextView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/option2Label"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="2추"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@id/weaponNameTextView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/option3Label"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="3추"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@id/weaponNameTextView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/option4Label"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="4추"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@id/weaponNameTextView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/option5Label"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="5추"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@id/weaponNameTextView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/optionValuesLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/optionLabelsLinearLayout"
+        app:layout_constraintTop_toBottomOf="@id/optionLabelsLinearLayout">
+
+        <TextView
+            android:id="@+id/option1TextView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="AA"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="@id/option1Label"
+            app:layout_constraintTop_toBottomOf="@id/option1Label" />
+
+        <TextView
+            android:id="@+id/option2TextView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="AA"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="@id/option1Label"
+            app:layout_constraintTop_toBottomOf="@id/option1Label" />
+
+        <TextView
+            android:id="@+id/option3TextView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="AA"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="@id/option1Label"
+            app:layout_constraintTop_toBottomOf="@id/option1Label" />
+
+        <TextView
+            android:id="@+id/option4TextView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="AA"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="@id/option1Label"
+            app:layout_constraintTop_toBottomOf="@id/option1Label" />
+
+        <TextView
+            android:id="@+id/option5TextView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="AA"
+            android:gravity="center"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="@id/option1Label"
+            app:layout_constraintTop_toBottomOf="@id/option1Label" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

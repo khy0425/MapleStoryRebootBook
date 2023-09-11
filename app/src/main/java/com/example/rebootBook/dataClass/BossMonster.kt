@@ -10,7 +10,9 @@ data class BossMonster(
     val price: String,
     val bossType: BossType,
     val dropItems: List<DropItem>,
-    val bossDesc: String
+    val bossDesc: String,
+    val forceRequired: String,
+    val forceBoostRequired: String
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
@@ -19,7 +21,9 @@ data class BossMonster(
         parcel.readString() ?: "",
         BossType.valueOf(parcel.readString() ?: "DAILY"),
         parcel.createTypedArrayList(DropItem.CREATOR) ?: emptyList(),
-        parcel.readString() ?: ""
+        parcel.readString() ?: "",
+        parcel.readString() ?: "",
+        parcel.readString() ?: "",
     )
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -30,6 +34,8 @@ data class BossMonster(
         parcel.writeString(bossType.name)
         parcel.writeTypedList(dropItems)
         parcel.writeString(bossDesc)
+        parcel.writeString(forceRequired)
+        parcel.writeString(forceBoostRequired)
     }
 
     override fun describeContents(): Int {

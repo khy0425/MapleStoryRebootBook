@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
 
         swipeRefreshLayout = binding.swipeRefreshLayout
 
+        refreshEvents()
         swipeRefreshLayout.setOnRefreshListener {
             refreshEvents()
         }
@@ -108,6 +109,8 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.nav_item5 -> {
                     // TODO: 무기 추옵 정리
+                    val intent = Intent(this, WeaponOptionActivity::class.java)
+                    startActivity(intent)
                 }
 
                 R.id.nav_item6 -> {
@@ -130,9 +133,8 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
-        // nav_3, nav_5, nav_8 버튼을 숨김
+        // nav_3, nav_8 버튼을 숨김
         binding.navigationView.menu.findItem(R.id.nav_item3).isVisible = false
-        binding.navigationView.menu.findItem(R.id.nav_item5).isVisible = false
         binding.navigationView.menu.findItem(R.id.nav_item8).isVisible = false
 
 //        binding.adView.adUnitId = BuildConfig.GOOGLE_AD_UNIT_ID

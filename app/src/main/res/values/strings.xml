@@ -13,6 +13,8 @@
     <string name="item9_title">아케인 주간 퀘스트 헬퍼</string>
     <string name="item10_title">유용한 사이트 정리</string>
 
+    <string name="union_potion">유니온의 부 사용</string>
+
     <string name="union_hunting_new_1_description">"230615 패치로 인해서(이하 생략) 이전에는 골렘, 아이류를 잡았지만 이제는 들개를 잡는 것이 제일 빠릅니다. 전문기술 버튼으로 마이스터빌(이하 마빌) 이동이 35레벨 이상부터 가능한 점은 유의하랍니다."</string>
     <string name="union_hunting_new_2_description">"본섭과 동일하게 페리온의 와일드보어를 잡으러 가시면 됩니다. 하지만 여전히 테마던전도 좋은 선택지 입니다." </string>
     <string name="union_hunting_new_3_description">"조용한 습지의 드레이크를 잡으셔도 괜찮지만 자리가 부족하고 테마던전이 좋은 선택지가 될 수 있습니다."</string>
@@ -358,9 +360,15 @@
     <string name="hard_djunkel_price">843,046,400</string>
     <string name="hard_v_hilla_price">950,797,260</string>
     <string name="normal_serene_price">984,523,760</string>
-    <string name="hard_serene_price">1,339,128,105</string>"
-    <string name="chaos_kalos_price">1,500,000,000</string>
+    <string name="hard_serene_price">1,339,128,105</string>
+    <string name="easy_kalos_price">1,150,000,000</string>
+    <string name="normal_kalos_price">1,500,000,000</string>
+    <string name="chaos_kalos_price">3,000,000,000</string>
+    <string name="expert_kalos_price">6,000,000,000</string>
+    <string name="easy_kaling_price">1,250,000,000</string>
     <string name="normal_kaling_price">1,750,000,000</string>
+    <string name="hard_kaling_price">3,500,000,000</string>
+    <string name="expert_kaling_price">7,000,000,000</string>
     <string name="expert_serene_price">5,356,512,420</string>
 
     <!--보스 아이템 명칭-->
@@ -454,10 +462,15 @@
 
     <string name="gravity_module">그라비티 모듈</string>
 
+    <string name="kalos_piece">남겨진 칼로스의 의지 조각</string>
     <string name="kalos_box">남겨진 칼로스의 의지</string>
+    <string name="kalos_android">니키로이드</string>
+    <string name="kalos_upgrade">파멸의 징표</string>
 
+    <string name="kalling_piece">뒤엉킨 흉수의 고리 조각</string>
     <string name="kalling_box">뒤엉킨 흉수의 고리</string>
     <string name="kalling_droid">카링로이드</string>
+    <string name="kalling_upgrade">충정의 투구</string>
 
     <string name="low_ring_box">녹옥의 보스 반지 상자</string>
     <string name="middle_ring_box">홍옥의 보스 반지 상자</string>
@@ -467,6 +480,8 @@
     <string name="low_sol_elda">희미한 솔 에르다의 기운</string>
     <string name="middle_sol_elda">솔 에르다의 기운</string>
     <string name="high_sol_elda">짙은 솔 에르다의 기운</string>
+
+    <string name="ring_upgrade">생명의 연마석</string>
 
     <!--보스 아이템 설명-->
     <string name="zakum_easy_description">메이플스토리를 갓 시작한 유저가 처음으로 상대하게 되는 레이드 보스 몬스터이다.\n
@@ -782,24 +797,65 @@
         따라서 검은 마법사와 동티어에 배정되었지만 실질적으로는 검은 마법사를 격파한 해방 유저들의 다음 목표가 되는 검은마법사의 상위 보스이다.
     </string>
     <string name="seren_extream_description">
-        역시 검은 마법사처럼 체력이 무지막지하게 뻥튀기 된데다 패턴 또한 하드 모드에 비해 더욱 강화되었다.\n
-        2페이즈 레벨도 280으로 상승하였다.\n
-        현존하는 메이플의 보스들 중 가장 마지막으로 격파된 보스이다.
+        2022년 7월 28일 IGNITION 2차 업데이트로 추가되었다. 역시 검은 마법사처럼 체력이 무지막지하게 뻥튀기 된데다 패턴 또한 하드 모드에 비해 더욱 강화되었다.\n
+        2페이즈 레벨도 280으로 상승했다. 1페이즈 체력은 약 1,489조, 2페이즈는 5,800조로 추정된다.\n
+        출시 당시 클리어가 불가능했던 하드 스우 이후로 나온 보스들 중에서 가장 격파에 오랜 시간이 걸린 보스다.\n
+        격수 1인분 컷은 6차 마스터리와 오리진 스킬이 많이 강화된 기준 레벨 285 / 포스 250에 환산 80,000 후반 (HEXA 환산 8.5)이면 딜은 부족하지 않다. 단 파티의 조합과 시너지가 중요하다.\n
+        또한 패턴이 하드와는 비교가 안 되게 강화되었기 때문에 파티원들의 평균 컨이 나쁘지 않더라도 20분을 넘기면 데카아웃하거나 특히 자정 게이지 소멸로 퇴장되는 경우가 매우 잦아서 현실적으로 30분 가까이 데카아웃하는 인원 없이 클리어하기는 어렵다.\n
+        따라서 안정적으로 클리어하려면 환산 90,000 중반 이상의 파티를 짜는 것이 낫다.
+    </string>
+
+    <string name="kalos_easy_description">
+        NEW AGE 3차 업데이트로 추가된 난이도. 보스 레벨은 270레벨 고정이며, 어센틱포스는 1, 2페이즈 모두 200을 요구한다.\n
+        보스 체력은 1, 2페이즈 합 356조 9000억 이며, 이는 노멀 모드의 약 1/3에 해당하는 수치이다.\n
+        레벨 275에 포스 250 이상 격수 기준, 무릉도장 60층 (환산 주스탯 기준 4만 중반정도) 부터 1인분이 가능하다.
     </string>
 
     <string name="kalos_normal_description">
-        전투측정을 통해 밝혀진 총 체력은 1,056조로, 같은 티어에 위치한 검은 마법사와 세렌의 2배 이상의 체력을 보유하고 있다.\n
-        체력 자체도 굉장이 높고, 평딜은 거의 넣지 않고 오로지 극딜로만 승부해야하는 보스인 만큼\n
-        요구 스펙 역시 직전 보스인 세렌보다 훨씬 높다.\n
-        기존의 보스들과 다르게 격수컷을 무릉 층수가 아닌 환산 주스텟을 기준으로 본다.\n
-        레벨 280, 포스 260 기준으로 환산 80,000급은 되어야하며\n
-        포스를 300 이상까지 체운다고 하여도 환산 60,000이상은 되어야 1인분을 할 수 있다.\n
-        극딜 화력이 약한 직업의 경우 스펙 요구량이 더 높다.
+        전투측정을 통해 밝혀진 총 체력은 1,056조로, 같은 티어에 위치한 검은 마법사나 선택받은 세렌의 2배 이상의 체력을 보유하고 있다.\n
+        2023년 NEW AGE 3차 패치 이전까지는 본 난이도가 카오스 난이도였으나, 패치 이후 노멀 난이도로 변경 되었다.\n
+        또한 티어가 금별 6개로 상향되었다. 또한 유일하게 1페이즈와 2페이즈의 어센틱포스가 다르게 책정된 난이도이다.\n
+        체력 자체도 굉장히 높은 데다가, 평딜은 거의 넣지 않고 오직 극딜로만 승부해야하는 보스인 만큼, 요구 스펙 역시 직전 보스인 세렌보다 훨씬 높다.\n
+        레벨 280, 포스 300 기준 환산 60,000 이상은 되어야 1인분을 할 수 있으며 극딜 화력이 약한 직업의 경우 스펙 요구량이 더 높다.\n
+        2-1/2-3을 스킵하는 빌드 또는 2분 주기에 2페이즈 각 눈금을 1극딜로 넘기는 딜찍누 파티의 경우 레벨 280, 포스 350 기준 마스터리와 오리진이 어느 정도 강화된 환산 70,000 정도를 격수 1인분으로 잡는다.\n
+        이런 딜찍누 파티의 경우 간섭작과 전탄 주기 체크를 거의 할 필요가 없으므로, 과거의 악명이 무색하게 매우 쾌적한 진행이 가능하다.\n
+        카오스 감시자 칼로스의 난이도와 체력이 지나치게 높고, 남겨진 칼로스의 의지를 2개 준다는 것 이외에는 별다른 단체 보상 물욕 아이템이 없기 때문에, 대부분의 7만대 이상 유저들은 노멀 칼로스를 딜찍누하는 파티를 짜서 진행하는 추세이다.
+    </string>
+
+    <string name="kalos_chaos_description">
+        NEW AGE 패치를 통해 기존의 카오스 모드가 노멀 모드로 변경되었고 새로운 차원의 카오스 모드가 추가되었다.\n
+        노멀 모드까지는 1페이즈 방어율이 330%, 레벨이 270 이었던 것과는 달리 카오스 모드부터는 1페이즈부터 방어율이 380%, 레벨이 285 이다. 간섭과 전탄 등의 주요 패턴이 크게 강화되었다. \n
+        총 체력은 6050조로 추정되어 익스트림 검은 마법사와 비슷하며, 익스트림 선택받은 세렌보다는 낮다. 그래서 그런지 새로나온 카오스 모드의 칼로스는 출시된 지 42분만에 엘리시움 서버에서 바로 격파되었다. \n
+        파티격 1인분 최소컷은 레벨 285에 포스 380 기준으로 헥사 코어가 많이 강화된 환산 10만 이상 (HEXA 환산 9.5)이다.
+    </string>
+
+    <string name="kalos_expert_description">
+        NEW AGE 3차 업데이트로 추가된 난이도로 보스 티어에서 무려 금별 12개를 부여받았다.\n
+        익스트림 모드에서는 섬멸 프로토콜이라는 신규 패턴이 추가되어 강화된 패턴이 등장한다. 총 체력은 3경 720조로 추정된다.
+    </string>
+
+    <string name="kaling_easy_description">
+        2023년 8월 10일 업데이트로 추가된 난이도이다.\n
+        체력은 총 921조로 노멀 모드의 1/4 정도이며, 레벨 280, 포스 280 이상에 주력 헥사 강화 코어가 1레벨 강화된 환산 4만 후반 (HEXA 환산 4.3)이 파티격 1인분 최소컷이다. 무릉도장 층수는 60층대 초중반 정도. \n
+        파티의 조합이 매우 중요하고, 3페이즈에서 주력기의 범위가 넓어서 흉수 여럿과 카링을 동시에 공격할 수 있는 딜러면 더 많은 기여를 할 수 있다.
     </string>
 
     <string name="kaling_normal_description">
-        요구 어센틱포스는 330으로, 포스를 이용해 강제로 클리어를 막아둔 세렌이나 칼로스와 다르게, 선발대는 즉시 도전할 수 있도록 설정됐다.\n
-        하지만 그 대가로 총 체력이 무려 3,700조로 설정됐다.
+        카링 업데이트와 함께 노멀 모드 하나로 처음 출시되었다.\n
+        요구 어센틱포스는 330으로, 포스를 이용해 강제로 클리어를 막아둔 선택받은 세렌(200)이나 감시자 칼로스(노멀 기준 300)와 다르게, 선발대는 즉시 도전할 수 있도록 설정됐다. 하지만 그 대가로 총 체력이 무려 3,700조나 된다.\n
+        일반적으로 격수 요구 1인분 스펙은 레벨 280, 포스 380 기준 환산 7만 중~후반 (HEXA 환산 6만 후반), 레벨 285, 포스 380 기준 환산 7만 초~중반이다.\n
+        (HEXA 환산 6만 중~후반) 단 3페이즈에서 주력기가 넓어 흉수 여럿과 카링을 동시에 공격할 수 있는 직업의 경우 동스펙에 비해 더 많은 기여를 할 수 있다. 또한, 파티의 조합 및 3페이즈 자리 분배도 대단히 중요하다.\n
+        카링도 칼로스와 마찬가지로 파티의 딜이 넘칠 수록 체감 난이도는 많이 낮아지며, 2페이즈의 경우 딜이 남는 파티는 6차 오리진 스킬+극딜로 2~30초 안에 끝내는 것이 선호되는데 이 경우 안정성이 매우 높아진다.\n
+        이렇게 파티를 짜려면 레벨 285에 포스 380에 6차 스킬 강화가 많이 된 기준 평균 환산 8만 후반 (HEXA 환산 8.0)은 되어야 한다.
+    </string>
+
+    <string name="kaling_hard_description">
+        2023년 8월 10일 업데이트로 추가된 난이도이며, 전체 체력은 1경 초중반으로 추정된다.
+    </string>
+
+    <string name="kaling_expert_desciption">
+        보스 티어는 무려 금별 14개를 부여받았다. 추정 체력은 8경 이상이다.\n
+        익스트림 모드의 경우 궁기가 살아있을때 30초당 감소되는 정신력이 40으로 2배 증가하며, 전체적으로 사망하거나 패턴에 피격될 시의 정신력 감소량이 증가한다.
     </string>
 
     <string name="boss_nothing">only 메소만</string>
@@ -813,4 +869,76 @@
     <string name="boss_description">*보스 줄을 터치하면 추가 설명이 나타납니다.</string>
 
     <string name="tip_site_no_1">유니온 지도 메이커</string>
+
+    <!--보스 별 포스 요구 수치 정리-->
+    <string name="force_noting">0</string>
+    <string name="force_boost_noting">0</string>
+
+    <string name="lucid_easy_force">360</string>
+    <string name="lucid_easy_boost">540</string>
+    <string name="lucid_normal_force">360</string>
+    <string name="lucid_normal_boost">540</string>
+    <string name="lucid_hard_force">360</string>
+    <string name="lucid_hard_boost">540</string>
+
+    <string name="will_easy_force">560</string>
+    <string name="will_easy_boost">840</string>
+    <string name="will_normal_force">760</string>
+    <string name="will_normal_boost">1140</string>
+    <string name="will_hard_force">760</string>
+    <string name="will_hard_boost">1140</string>
+
+    <string name="dusk_normal_force">730</string>
+    <string name="dusk_normal_boost">1095</string>
+    <string name="dusk_hard_force">730</string>
+    <string name="dusk_hard_boost">1095</string>
+    
+    <string name="djunkel_normal_force">850</string>
+    <string name="djunkel_normal_boost">1275</string>
+    <string name="djunkel_hard_force">850</string>
+    <string name="djunkel_hard_boost">1275</string>
+    
+    <string name="hilla_normal_force">900</string>
+    <string name="hilla_normal_boost">1350</string>
+    <string name="hilla_hard_force">900</string>
+    <string name="hilla_hard_boost">1350</string>
+    
+    <string name="bm_hard_force">1320</string>
+    <string name="bm_hard_boost">1455(110%)</string>
+    <string name="bm_extream_force">1320</string>
+    <string name="bm_extream_boost">1455(110%)</string>
+    
+    <string name="seren_normal_force">200</string>
+    <string name="seren_normal_boost">250</string>
+    <string name="seren_hard_force">200</string>
+    <string name="seren_hard_boost">250</string>
+    <string name="seren_extream_force">200</string>
+    <string name="seren_extream_boost">250</string>
+
+    <string name="kalos_easy_force">200</string>
+    <string name="kalos_easy_boost">250</string>
+    <string name="kalos_normal_force">300</string>
+    <string name="kalos_normal_boost">350</string>
+    <string name="kalos_chaos_force">330</string>
+    <string name="kalos_chaos_boost">380</string>
+    <string name="kalos_extream_force">440</string>
+    <string name="kalos_extream_boost">490</string>
+
+    <string name="kaling_easy_force">230</string>
+    <string name="kaling_easy_boost">280</string>
+    <string name="kaling_normal_force">330</string>
+    <string name="kaling_normal_boost">380</string>
+    <string name="kaling_hard_force">350</string>
+    <string name="kaling_hard_boost">400</string>
+    <string name="kaling_extream_force">480</string>
+    <string name="kaling_extream_boost">530</string>
+
+
+    <string name="search_hint">무기의 종류와 이름으로 검색이 가능합니다.</string>
+    <string name="warrior">전사</string>
+    <string name="magician">마법사</string>
+    <string name="archer">궁수</string>
+    <string name="thief">도적</string>
+    <string name="pirate">해적</string>
+
 </resources>

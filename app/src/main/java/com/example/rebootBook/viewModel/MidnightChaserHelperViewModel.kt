@@ -26,14 +26,20 @@ class MidnightChaserViewModel : ViewModel() {
         val updatedBigGridItems = bigGridItems.value?.mapIndexed { i, smallGrid ->
             if (i == bigIndex) {
                 smallGrid.mapIndexed { j, chaser ->
-                    when {
-                        j == smallIndex && chaser.state == MidnightChaser.State.UNSELECTED -> chaser.copy(state = MidnightChaser.State.SELECTED)
-                        j != smallIndex && chaser.state != MidnightChaser.State.SELECTED -> chaser.copy(state = MidnightChaser.State.UNSELECTABLE)
-                        else -> chaser
+                    if (j == smallIndex) {
+                        chaser.copy(state = MidnightChaser.State.SELECTED)
+                    } else {
+                        chaser.copy(state = MidnightChaser.State.UNAVAILABLE)
                     }
                 }
             } else {
-                smallGrid
+                smallGrid.map {
+                    if (it.smallResId == smallGrid[smallIndex].smallResId) {
+                        it.copy(state = MidnightChaser.State.UNAVAILABLE)
+                    } else {
+                        it
+                    }
+                }
             }
         }
         bigGridItems.value = updatedBigGridItems

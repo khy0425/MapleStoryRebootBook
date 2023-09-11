@@ -65,7 +65,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.zakum_eye), imageResId = R.drawable.zakum_eye),
                     DropItem(name = getString(R.string.zakum_face), imageResId = R.drawable.zakum_face)
                 ),
-                bossDesc = getString(R.string.zakum_easy_description)
+                bossDesc = getString(R.string.zakum_easy_description),
+                forceRequired = getString(R.string.force_noting),
+                forceBoostRequired = getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -79,7 +81,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.zakum_face), imageResId = R.drawable.zakum_face),
                     DropItem(name = getString(R.string.zakum_weapon), imageResId = R.drawable.zakum_weapon)
                 ),
-                bossDesc = getString(R.string.zakum_normal_description)
+                bossDesc = getString(R.string.zakum_normal_description),
+                forceRequired = getString(R.string.force_noting),
+                forceBoostRequired = getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -91,7 +95,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.meso), imageResId = R.drawable.boss_meso)
                 ),
-                getString(R.string.boss_quest)
+                getString(R.string.boss_quest),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
             BossMonster(
                 R.drawable.magnus_image,
@@ -103,7 +109,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.magnus_bedge), imageResId = R.drawable.magnus_bedge),
                     DropItem(name = getString(R.string.magnus_strap), imageResId = R.drawable.magnus_strap)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.magnus_normal_description)
+                getString(R.string.boss_quest) + getString(R.string.magnus_normal_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -115,7 +123,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.meso), imageResId = R.drawable.boss_meso)
                 ),
-                getString(R.string.boss_nothing)
+                getString(R.string.boss_nothing),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -129,7 +139,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.horntail_ring), imageResId = R.drawable.horntail_ring),
                     DropItem(name = getString(R.string.horntail_earring), imageResId = R.drawable.horntail_earling)
                 ),
-                getString(R.string.horntail_normal_description)
+                getString(R.string.horntail_normal_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -141,7 +153,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.meso), imageResId = R.drawable.boss_meso)
                 ),
-                getString(R.string.boss_nothing)
+                getString(R.string.boss_nothing),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -153,7 +167,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.meso), imageResId = R.drawable.boss_meso)
                 ),
-                getString(R.string.boss_nothing)
+                getString(R.string.boss_nothing),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -165,7 +181,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.meso), imageResId = R.drawable.boss_meso)
                 ),
-                getString(R.string.boss_nothing)
+                getString(R.string.boss_nothing),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -177,7 +195,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.meso), imageResId = R.drawable.boss_meso)
                 ),
-                getString(R.string.boss_nothing)
+                getString(R.string.boss_nothing),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -191,7 +211,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.horntail_ring), imageResId = R.drawable.horntail_ring),
                     DropItem(name = getString(R.string.horntail_earring), imageResId = R.drawable.horntail_earling)
                 ),
-                getString(R.string.horntail_normal_description)
+                getString(R.string.horntail_normal_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -203,7 +225,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.meso), imageResId = R.drawable.boss_meso)
                 ),
-                getString(R.string.boss_quest)
+                getString(R.string.boss_quest),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -216,7 +240,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.akarum_pendant), imageResId = R.drawable.akarum_pendant),
                     DropItem(name = getString(R.string.akarum_stuff), imageResId = R.drawable.akarum_stuff)
                 ),
-                getString(R.string.akarum_easy_description)
+                getString(R.string.akarum_easy_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -228,7 +254,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.meso), imageResId = R.drawable.boss_meso)
                 ),
-                getString(R.string.boss_quest)
+                getString(R.string.boss_quest),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -242,7 +270,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.horntail_ring), imageResId = R.drawable.horntail_ring),
                     DropItem(name = getString(R.string.horntail_earring), imageResId = R.drawable.horntail_earling)
                 ),
-                getString(R.string.horntail_normal_description)
+                getString(R.string.horntail_normal_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -256,7 +286,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.pinkbean_cup), imageResId = R.drawable.pink_bean_cup),
                     DropItem(name = getString(R.string.pinkbean_mark), imageResId = R.drawable.pink_bean_mark)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.pinkbean_description)
+                getString(R.string.boss_quest) + getString(R.string.pinkbean_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -268,7 +300,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.meso), imageResId = R.drawable.boss_meso)
                 ),
-                getString(R.string.boss_quest)
+                getString(R.string.boss_quest),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -281,7 +315,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.leon_ring), imageResId = R.drawable.leon_ring),
                     DropItem(name = getString(R.string.leon_ring_plus), imageResId = R.drawable.leon_ring_plus)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.leon_hard_description)
+                getString(R.string.boss_quest) + getString(R.string.leon_hard_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -295,7 +331,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.akarum_pendant_plus), imageResId = R.drawable.akarum_pendant_plus),
                     DropItem(name = getString(R.string.akarum_stuff), imageResId = R.drawable.akarum_stuff)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.akarum_noraml_description)
+                getString(R.string.boss_quest) + getString(R.string.akarum_noraml_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -308,7 +346,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.magnus_bedge), imageResId = R.drawable.magnus_bedge),
                     DropItem(name = getString(R.string.magnus_strap), imageResId = R.drawable.magnus_strap)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.magnus_normal_description)
+                getString(R.string.boss_quest) + getString(R.string.magnus_normal_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
             BossMonster(
                 R.drawable.papulatus_image,
@@ -319,7 +359,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.meso), imageResId = R.drawable.boss_meso)
                 ),
-                getString(R.string.boss_quest)
+                getString(R.string.boss_quest),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -331,7 +373,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 dropItems = listOf(
                     DropItem(name = getString(R.string.meso), imageResId = R.drawable.boss_meso)
                 ),
-                bossDesc = getString(R.string.boss_nothing)
+                bossDesc = getString(R.string.boss_nothing),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -343,7 +387,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.hilla_earring), imageResId = R.drawable.hilla_earling)
                 ),
-                getString(R.string.hilla_description)
+                getString(R.string.hilla_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -357,7 +403,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.pinkbean_cup), imageResId = R.drawable.pink_bean_cup),
                     DropItem(name = getString(R.string.pinkbean_mark), imageResId = R.drawable.pink_bean_mark)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.pinkbean_description)
+                getString(R.string.boss_quest) + getString(R.string.pinkbean_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -369,7 +417,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 dropItems = listOf(
                     DropItem(name = getString(R.string.meso), imageResId = R.drawable.boss_meso)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.hilla_description)
+                getString(R.string.boss_quest) + getString(R.string.hilla_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -385,7 +435,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.zakum_belt), imageResId = R.drawable.zakum_belt),
                     DropItem(name = getString(R.string.zakum_cloak), imageResId = R.drawable.zakum_cloak)
                 ),
-                getString(R.string.zakum_chaos_description)
+                getString(R.string.zakum_chaos_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -397,7 +449,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.bq_piece), imageResId = R.drawable.bq_piece)
                 ),
-                getString(R.string.bq_description)
+                getString(R.string.bq_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -409,7 +463,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.banban_piece), imageResId = R.drawable.banban_piece)
                 ),
-                getString(R.string.banban_description)
+                getString(R.string.banban_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -421,7 +477,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.pierre_piece), imageResId = R.drawable.pierre_piece)
                 ),
-                getString(R.string.pierre_description)
+                getString(R.string.pierre_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -435,7 +493,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.magnus_strap), imageResId = R.drawable.magnus_strap),
                     DropItem(name = getString(R.string.magnus_weapon), imageResId = R.drawable.magnus_weapon)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.magnus_hard_description)
+                getString(R.string.boss_quest) + getString(R.string.magnus_hard_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -447,7 +507,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.vellum_piece), imageResId = R.drawable.vellum_piece)
                 ),
-                getString(R.string.vellum_description)
+                getString(R.string.vellum_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -459,7 +521,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.papulatus_mark), imageResId = R.drawable.papulatus_mark)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.papulatus_description)
+                getString(R.string.boss_quest) + getString(R.string.papulatus_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -472,7 +536,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.lotus_core), imageResId = R.drawable.lotus_core),
                     DropItem(name = getString(R.string.low_ring_box), imageResId = R.drawable.low_ring_box)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.lotus_normal_description)
+                getString(R.string.boss_quest) + getString(R.string.lotus_normal_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -486,7 +552,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.damien_shield), imageResId = R.drawable.damien_shield),
                     DropItem(name = getString(R.string.low_ring_box), imageResId = R.drawable.low_ring_box)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.damien_normal_description)
+                getString(R.string.boss_quest) + getString(R.string.damien_normal_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -499,7 +567,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.gns_ring), imageResId = R.drawable.gns_ring),
                     DropItem(name = getString(R.string.low_ring_box), imageResId = R.drawable.low_ring_box)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.gns_normal_description)
+                getString(R.string.boss_quest) + getString(R.string.gns_normal_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -511,7 +581,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.low_ring_box), imageResId = R.drawable.low_ring_box)
                 ),
-                getString(R.string.lucid_easy_description)
+                getString(R.string.lucid_easy_description),
+                getString(R.string.lucid_easy_force),
+                getString(R.string.lucid_easy_boost)
             ),
 
             BossMonster(
@@ -523,7 +595,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.low_ring_box), imageResId = R.drawable.low_ring_box)
                 ),
-                getString(R.string.will_easy_description)
+                getString(R.string.will_easy_description),
+                getString(R.string.will_easy_force),
+                getString(R.string.will_easy_boost)
             ),
 
             BossMonster(
@@ -537,7 +611,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.lucid_core), imageResId = R.drawable.lucid_core),
                     DropItem(name = getString(R.string.low_ring_box), imageResId = R.drawable.low_ring_box)
                 ),
-                getString(R.string.lucid_normal_description)
+                getString(R.string.lucid_normal_description),
+                getString(R.string.lucid_normal_force),
+                getString(R.string.lucid_normal_boost)
             ),
 
             BossMonster(
@@ -551,7 +627,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.will_core), imageResId = R.drawable.will_core),
                     DropItem(name = getString(R.string.low_ring_box), imageResId = R.drawable.low_ring_box)
                 ),
-                getString(R.string.will_normal_description)
+                getString(R.string.will_normal_description),
+                getString(R.string.will_normal_force),
+                getString(R.string.will_normal_boost)
             ),
 
             BossMonster(
@@ -565,7 +643,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.dusk_fire), imageResId = R.drawable.dusk_fire),
                     DropItem(name = getString(R.string.low_ring_box), imageResId = R.drawable.low_ring_box)
                 ),
-                getString(R.string.dusk_normal_description)
+                getString(R.string.dusk_normal_description),
+                getString(R.string.dusk_normal_force),
+                getString(R.string.dusk_normal_boost)
             ),
 
             BossMonster(
@@ -578,7 +658,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.dusk_fire), imageResId = R.drawable.dusk_fire),
                     DropItem(name = getString(R.string.low_ring_box), imageResId = R.drawable.low_ring_box)
                 ),
-                getString(R.string.djunkel_normal_description)
+                getString(R.string.djunkel_normal_description),
+                getString(R.string.djunkel_normal_force),
+                getString(R.string.djunkel_normal_boost)
             ),
 
             BossMonster(
@@ -595,7 +677,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.lotus_android), imageResId = R.drawable.lotus_android),
                     DropItem(name = getString(R.string.middle_ring_box), imageResId = R.drawable.middle_ring_box)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.lotus_hard_description)
+                getString(R.string.boss_quest) + getString(R.string.lotus_hard_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -612,7 +696,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.damien_android), imageResId = R.drawable.damien_android),
                     DropItem(name = getString(R.string.middle_ring_box), imageResId = R.drawable.middle_ring_box)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.damien_hard_description)
+                getString(R.string.boss_quest) + getString(R.string.damien_hard_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
@@ -629,7 +715,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.lucid_core), imageResId = R.drawable.lucid_core),
                     DropItem(name = getString(R.string.middle_ring_box), imageResId = R.drawable.middle_ring_box)
                 ),
-                getString(R.string.lucid_hard_description)
+                getString(R.string.lucid_hard_description),
+                getString(R.string.lucid_hard_force),
+                getString(R.string.lucid_hard_boost)
             ),
 
             BossMonster(
@@ -646,7 +734,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.will_core), imageResId = R.drawable.will_core),
                     DropItem(name = getString(R.string.middle_ring_box), imageResId = R.drawable.middle_ring_box)
                 ),
-                getString(R.string.will_hard_description)
+                getString(R.string.will_hard_description),
+                getString(R.string.will_hard_force),
+                getString(R.string.will_hard_boost)
             ),
 
             BossMonster(
@@ -662,7 +752,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.middle_ring_box), imageResId = R.drawable.middle_ring_box),
                     DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda)
                 ),
-                getString(R.string.verus_hilla_normal_description)
+                getString(R.string.verus_hilla_normal_description),
+                getString(R.string.hilla_normal_force),
+                getString(R.string.hilla_normal_boost)
             ),
 
             BossMonster(
@@ -676,13 +768,15 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.high_ring_box), imageResId = R.drawable.high_ring_box),
                     DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda)
                 ),
-                getString(R.string.boss_quest) + getString(R.string.gns_chaos_description)
+                getString(R.string.boss_quest) + getString(R.string.gns_chaos_description),
+                getString(R.string.force_noting),
+                getString(R.string.force_boost_noting)
             ),
 
             BossMonster(
                 R.drawable.dusk_image,
                 getString(R.string.dusk_name),
-                getString(R.string.diff_hard),
+                getString(R.string.diff_chaos),
                 getString(R.string.chaos_dusk_price),
                 BossMonster.BossType.WEEKLY,
                 listOf(
@@ -693,7 +787,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.high_ring_box), imageResId = R.drawable.high_ring_box),
                     DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda)
                 ),
-                getString(R.string.dusk_chaos_description)
+                getString(R.string.dusk_chaos_description),
+                getString(R.string.dusk_hard_force),
+                getString(R.string.dusk_hard_boost)
             ),
 
             BossMonster(
@@ -710,7 +806,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.high_ring_box), imageResId = R.drawable.high_ring_box),
                     DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda)
                 ),
-                getString(R.string.djunkel_hard_description)
+                getString(R.string.djunkel_hard_description),
+                getString(R.string.djunkel_hard_force),
+                getString(R.string.djunkel_hard_boost)
             ),
 
             BossMonster(
@@ -727,7 +825,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.high_ring_box), imageResId = R.drawable.high_ring_box),
                     DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda)
                 ),
-                getString(R.string.verus_hilla_normal_description)
+                getString(R.string.verus_hilla_normal_description),
+                getString(R.string.hilla_hard_force),
+                getString(R.string.hilla_hard_boost)
             ),
 
 
@@ -742,7 +842,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.high_ring_box), imageResId = R.drawable.high_ring_box),
                     DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda)
                 ),
-                getString(R.string.seren_normal_description)
+                getString(R.string.seren_normal_description),
+                getString(R.string.seren_normal_force),
+                getString(R.string.seren_normal_boost)
             ),
 
             BossMonster(
@@ -759,7 +861,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda),
                     DropItem(name = getString(R.string.middle_sol_elda), imageResId = R.drawable.middle_sol_elda)
                 ),
-                getString(R.string.seren_hard_description)
+                getString(R.string.seren_hard_description),
+                getString(R.string.seren_hard_force),
+                getString(R.string.seren_hard_boost)
             ),
             BossMonster(
                 R.drawable.serene_image,
@@ -776,7 +880,45 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda),
                     DropItem(name = getString(R.string.high_sol_elda), imageResId = R.drawable.high_sol_elda)
                 ),
-                getString(R.string.seren_extream_description)
+                getString(R.string.seren_extream_description),
+                getString(R.string.seren_extream_force),
+                getString(R.string.seren_extream_boost)
+            ),
+
+            BossMonster(
+                R.drawable.kalos_image,
+                getString(R.string.kalos_name),
+                getString(R.string.diff_easy),
+                getString(R.string.easy_kalos_price),
+                BossMonster.BossType.WEEKLY,
+                listOf(
+                    DropItem(name = getString(R.string.kalos_piece), imageResId = R.drawable.kalos_piece),
+                    DropItem(name = getString(R.string.best_ring_box), imageResId = R.drawable.best_ring_box),
+                    DropItem(name = getString(R.string.middle_sol_elda), imageResId = R.drawable.middle_sol_elda),
+                    DropItem(name = getString(R.string.ring_upgrade), imageResId = R.drawable.kalos_ring_upgrade),
+                ),
+                getString(R.string.kalos_easy_description),
+                getString(R.string.kalos_easy_force),
+                getString(R.string.kalos_easy_boost)
+            ),
+
+            BossMonster(
+                R.drawable.kalos_image,
+                getString(R.string.kalos_name),
+                getString(R.string.diff_normal),
+                getString(R.string.normal_kalos_price),
+                BossMonster.BossType.WEEKLY,
+                listOf(
+                    DropItem(name = getString(R.string.kalos_box), imageResId = R.drawable.kalos_box),
+                    DropItem(name = getString(R.string.kalos_android), imageResId = R.drawable.kalos_android),
+                    DropItem(name = getString(R.string.best_ring_box), imageResId = R.drawable.best_ring_box),
+                    DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda),
+                    DropItem(name = getString(R.string.middle_sol_elda), imageResId = R.drawable.middle_sol_elda),
+                    DropItem(name = getString(R.string.ring_upgrade), imageResId = R.drawable.kalos_ring_upgrade),
+                ),
+                getString(R.string.kalos_normal_description),
+                getString(R.string.kalos_normal_force),
+                getString(R.string.kalos_normal_boost)
             ),
 
             BossMonster(
@@ -788,10 +930,49 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 listOf(
                     DropItem(name = getString(R.string.kalos_box), imageResId = R.drawable.kalos_box),
                     DropItem(name = getString(R.string.best_ring_box), imageResId = R.drawable.best_ring_box),
-                    DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda),
-                    DropItem(name = getString(R.string.middle_sol_elda), imageResId = R.drawable.middle_sol_elda)
+                    DropItem(name = getString(R.string.middle_sol_elda), imageResId = R.drawable.middle_sol_elda),
+                    DropItem(name = getString(R.string.ring_upgrade), imageResId = R.drawable.kalos_ring_upgrade),
                 ),
-                getString(R.string.kalos_normal_description)
+                getString(R.string.kalos_chaos_description),
+                getString(R.string.kalos_chaos_force),
+                getString(R.string.kalos_chaos_boost)
+            ),
+
+            BossMonster(
+                R.drawable.kalos_image,
+                getString(R.string.kalos_name),
+                getString(R.string.diff_expert),
+                getString(R.string.expert_kalos_price),
+                BossMonster.BossType.WEEKLY,
+                listOf(
+                    DropItem(name = getString(R.string.kalos_upgrade), imageResId = R.drawable.kalos_upgrade),
+                    DropItem(name = getString(R.string.kalos_box), imageResId = R.drawable.kalos_box),
+                    DropItem(name = getString(R.string.kalos_android), imageResId = R.drawable.kalos_android),
+                    DropItem(name = getString(R.string.best_ring_box), imageResId = R.drawable.best_ring_box),
+                    DropItem(name = getString(R.string.middle_sol_elda), imageResId = R.drawable.middle_sol_elda),
+                    DropItem(name = getString(R.string.high_sol_elda), imageResId = R.drawable.high_sol_elda),
+                    DropItem(name = getString(R.string.ring_upgrade), imageResId = R.drawable.kalos_ring_upgrade),
+                ),
+                getString(R.string.kalos_expert_description),
+                getString(R.string.kalos_extream_force),
+                getString(R.string.kalos_extream_boost)
+            ),
+
+            BossMonster(
+                R.drawable.kaling_image,
+                getString(R.string.kaling_name),
+                getString(R.string.diff_easy),
+                getString(R.string.easy_kaling_price),
+                BossMonster.BossType.WEEKLY,
+                listOf(
+                    DropItem(name = getString(R.string.kalling_piece), imageResId = R.drawable.kalling_piece),
+                    DropItem(name = getString(R.string.best_ring_box), imageResId = R.drawable.best_ring_box),
+                    DropItem(name = getString(R.string.middle_sol_elda), imageResId = R.drawable.middle_sol_elda),
+                    DropItem(name = getString(R.string.ring_upgrade), imageResId = R.drawable.kalos_ring_upgrade),
+                ),
+                getString(R.string.kaling_easy_description),
+                getString(R.string.kaling_easy_force),
+                getString(R.string.kaling_easy_boost)
             ),
 
             BossMonster(
@@ -805,10 +986,54 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.kalling_droid), imageResId = R.drawable.kalling_droid),
                     DropItem(name = getString(R.string.best_ring_box), imageResId = R.drawable.best_ring_box),
                     DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda),
-                    DropItem(name = getString(R.string.middle_sol_elda), imageResId = R.drawable.middle_sol_elda)
+                    DropItem(name = getString(R.string.middle_sol_elda), imageResId = R.drawable.middle_sol_elda),
+                    DropItem(name = getString(R.string.ring_upgrade), imageResId = R.drawable.kalos_ring_upgrade),
                 ),
-                getString(R.string.kaling_normal_description)
+                getString(R.string.kaling_normal_description),
+                getString(R.string.kaling_normal_force),
+                getString(R.string.kaling_normal_boost)
             ),
+
+
+            BossMonster(
+                R.drawable.kaling_image,
+                getString(R.string.kaling_name),
+                getString(R.string.diff_hard),
+                getString(R.string.hard_kaling_price),
+                BossMonster.BossType.WEEKLY,
+                listOf(
+                    DropItem(name = getString(R.string.kalling_box), imageResId = R.drawable.kaling_box),
+                    DropItem(name = getString(R.string.kalling_droid), imageResId = R.drawable.kalling_droid),
+                    DropItem(name = getString(R.string.best_ring_box), imageResId = R.drawable.best_ring_box),
+                    DropItem(name = getString(R.string.high_sol_elda), imageResId = R.drawable.high_sol_elda),
+                    DropItem(name = getString(R.string.ring_upgrade), imageResId = R.drawable.kalos_ring_upgrade),
+                ),
+                getString(R.string.kaling_hard_description),
+                getString(R.string.kaling_hard_force),
+                getString(R.string.kaling_hard_boost)
+            ),
+
+            BossMonster(
+                R.drawable.kaling_image,
+                getString(R.string.kaling_name),
+                getString(R.string.diff_expert),
+                getString(R.string.expert_kaling_price),
+                BossMonster.BossType.WEEKLY,
+                listOf(
+                    DropItem(name = getString(R.string.kalling_upgrade), imageResId = R.drawable.kalling_upgrade),
+                    DropItem(name = getString(R.string.kalling_box), imageResId = R.drawable.kaling_box),
+                    DropItem(name = getString(R.string.kalling_droid), imageResId = R.drawable.kalling_droid),
+                    DropItem(name = getString(R.string.best_ring_box), imageResId = R.drawable.best_ring_box),
+                    DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda),
+                    DropItem(name = getString(R.string.middle_sol_elda), imageResId = R.drawable.middle_sol_elda),
+                    DropItem(name = getString(R.string.high_sol_elda), imageResId = R.drawable.high_sol_elda),
+                    DropItem(name = getString(R.string.ring_upgrade), imageResId = R.drawable.kalos_ring_upgrade),
+                ),
+                getString(R.string.kaling_expert_desciption),
+                getString(R.string.kaling_extream_force),
+                getString(R.string.kaling_extream_boost)
+            ),
+
 
             BossMonster(
                 R.drawable.bm_image,
@@ -824,7 +1049,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda),
                     DropItem(name = getString(R.string.middle_sol_elda), imageResId = R.drawable.middle_sol_elda)
                 ),
-                getString(R.string.dark_load_hard_description)
+                getString(R.string.dark_load_hard_description),
+                getString(R.string.bm_hard_force),
+                getString(R.string.bm_hard_boost)
             ),
 
             BossMonster(
@@ -841,7 +1068,9 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                     DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda),
                     DropItem(name = getString(R.string.high_sol_elda), imageResId = R.drawable.high_sol_elda)
                 ),
-                getString(R.string.dark_load_extream_description)
+                getString(R.string.dark_load_extream_description),
+                getString(R.string.bm_extream_force),
+                getString(R.string.bm_extream_boost)
             )
         )
     }

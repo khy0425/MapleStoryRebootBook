@@ -12,6 +12,7 @@
         android:orientation="vertical"
         android:padding="8dp">
 
+        <!-- Boss Image, Name, Difficulty, and Price -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,7 +38,6 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.8"
-                android:textStyle="bold"
                 android:text="Difficulty"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small" />
 
@@ -51,6 +51,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Small" />
         </LinearLayout>
 
+        <!-- Drop Items List -->
         <LinearLayout
             android:id="@+id/dripItemsLinearLayout"
             android:layout_width="match_parent"
@@ -62,14 +63,40 @@
                 android:id="@+id/dropItemsRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/dripItemsLinearLayout"/>
-
-
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
         </LinearLayout>
 
+        <!-- Force Required and Force Boost -->
+        <LinearLayout
+            android:id="@+id/forcesLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_force_required"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="요구 포스량: nn"
+                android:textSize="12sp"
+                android:gravity="left"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_force_boost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="요구 포스뻥: AA"
+                android:textSize="12sp"
+                android:gravity="left"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Boss Description -->
         <TextView
             android:id="@+id/bossDesc"
             android:layout_width="match_parent"
@@ -77,9 +104,6 @@
             android:layout_marginTop="8dp"
             android:text="Boss Description"
             android:background="#E0E0E0"
-            app:layout_constraintTop_toBottomOf="@+id/dropItemsRecyclerView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             android:visibility="gone"/>
 
     </LinearLayout>

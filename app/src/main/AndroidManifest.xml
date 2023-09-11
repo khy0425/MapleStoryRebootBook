@@ -48,6 +48,9 @@
         <activity android:name="com.example.rebootBook.QuestHelperActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
+        <activity android:name="com.example.rebootBook.WeaponOptionActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
     </application>
 
 </manifest>

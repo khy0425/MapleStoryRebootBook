@@ -73,9 +73,11 @@ class BossMonsterAdapter(
             itemView.setOnClickListener {
                 if (binding.dripItemsLinearLayout.visibility == View.GONE) {
                     binding.dripItemsLinearLayout.visibility = View.VISIBLE
+                    binding.forcesLinearLayout.visibility = View.VISIBLE
                     binding.bossDesc.visibility = View.VISIBLE
                 } else {
                     binding.dripItemsLinearLayout.visibility = View.GONE
+                    binding.forcesLinearLayout.visibility = View.GONE
                     binding.bossDesc.visibility = View.GONE
                 }
             }
@@ -87,6 +89,8 @@ class BossMonsterAdapter(
             binding.tvBossDifficulty.text = bossMonster.diff
             binding.tvBossPrice.text = bossMonster.price
             binding.bossDesc.text = bossMonster.bossDesc
+            binding.tvForceRequired.text = "요구 포스량: ${bossMonster.forceRequired}"
+            binding.tvForceBoost.text = "요구 포스뻥: ${bossMonster.forceBoostRequired}"
 
             if (bossMonster.dropItems.isNotEmpty()) {
                 binding.dropItemsRecyclerView.layoutManager = GridLayoutManager(itemView.context, 2)
