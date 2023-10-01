@@ -3,7 +3,7 @@
     <data>
         <variable
             name="ingredient"
-            type="com.example.rebootBook.dataClass.RecipeDetailIngredient" />
+            type="com.leaf.rebootBook.dataClass.RecipeDetailIngredient" />
     </data>
 
     <LinearLayout

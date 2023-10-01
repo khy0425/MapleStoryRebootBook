@@ -4,10 +4,10 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.rebootBook.viewModel.MidnightChaserViewModel" />
+            type="com.leaf.rebootBook.viewModel.MidnightChaserViewModel" />
         <variable
             name="adapter"
-            type="com.example.rebootBook.adapter.ChaserBigGridAdapter" />
+            type="com.leaf.rebootBook.adapter.ChaserBigGridAdapter" />
     </data>
 
     <LinearLayout

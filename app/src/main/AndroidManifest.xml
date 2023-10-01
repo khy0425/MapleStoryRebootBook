@@ -33,22 +33,22 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name="com.example.rebootBook.UnionHuntingActivity"
+        <activity android:name="com.leaf.rebootBook.UnionHuntingActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name="com.example.rebootBook.CalculatorActivity"
+        <activity android:name="com.leaf.rebootBook.CalculatorActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name="com.example.rebootBook.UnionEffectActivity"
+        <activity android:name="com.leaf.rebootBook.UnionEffectActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name="com.example.rebootBook.BossCrystalPriceActivity"
+        <activity android:name="com.leaf.rebootBook.BossCrystalPriceActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name="com.example.rebootBook.QuestHelperActivity"
+        <activity android:name="com.leaf.rebootBook.QuestHelperActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name="com.example.rebootBook.WeaponOptionActivity"
+        <activity android:name="com.leaf.rebootBook.WeaponOptionActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
     </application>

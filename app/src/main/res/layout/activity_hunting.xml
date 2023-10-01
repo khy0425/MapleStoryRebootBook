@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_gradient"
-    tools:context="com.example.rebootBook.UnionHuntingActivity">
+    tools:context="com.leaf.rebootBook.UnionHuntingActivity">
 
     <include
         android:id="@+id/toolbar_with_back_button"

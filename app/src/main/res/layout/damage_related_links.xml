@@ -48,146 +48,6 @@
                 android:text="@string/link_header3" />
         </TableRow>
 
-
-        <!-- 모험가 (마법사) -->
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="11sp"
-                android:text="@string/class_magician_name" />
-
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="4sp"
-                android:layout_marginBottom="4sp"
-                android:src="@drawable/magician_link" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4sp"
-                android:text="@string/link_magician_name" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10sp"
-                android:textSize="12sp"
-                android:layout_marginTop="4sp"
-                android:layout_marginBottom="4sp"
-                android:text="@string/link_magician_effect" />
-        </TableRow>
-
-        <!-- 모험가 (궁수) -->
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#F0F0F0"
-            android:gravity="center_vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="11sp"
-                android:text="@string/class_archer_name" />
-
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="4sp"
-                android:layout_marginBottom="4sp"
-                android:src="@drawable/archer_link" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4sp"
-                android:text="@string/link_archer_name" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10sp"
-                android:layout_marginTop="4sp"
-                android:layout_marginBottom="4sp"
-                android:text="@string/link_archer_effect" />
-        </TableRow>
-
-        <!-- 모험가 (도적) -->
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="11sp"
-                android:text="@string/class_thief_name" />
-
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="4sp"
-                android:layout_marginBottom="4sp"
-                android:src="@drawable/thief_link" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4sp"
-                android:text="@string/link_thief_name" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10sp"
-                android:layout_marginTop="4sp"
-                android:layout_marginBottom="4sp"
-                android:text="@string/link_thief_effect" />
-        </TableRow>
-
-        <!-- 모험가 (해적) -->
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#F0F0F0"
-            android:gravity="center_vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="11sp"
-                android:text="@string/class_pirate_name" />
-
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="4sp"
-                android:layout_marginBottom="4sp"
-                android:src="@drawable/pirot_link" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4sp"
-                android:text="@string/link_pirate_name" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10sp"
-                android:layout_marginTop="4sp"
-                android:layout_marginBottom="4sp"
-                android:text="@string/link_pirate_effect" />
-        </TableRow>
-
         <!-- 데몬어벤져 -->
         <TableRow
             android:layout_width="match_parent"
@@ -197,6 +57,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_avenger_name" />
 
             <ImageView
@@ -210,6 +71,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_avenger_name" />
 
             <TextView
@@ -245,6 +108,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_slayer_name" />
 
             <TextView
@@ -265,6 +130,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_luminous_name" />
 
             <ImageView
@@ -278,6 +144,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_luminous_name" />
 
             <TextView
@@ -299,6 +167,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_phantom_name" />
 
             <ImageView
@@ -312,6 +181,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_phantom_name" />
 
             <TextView
@@ -332,6 +203,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_kinesis_name" />
 
             <ImageView
@@ -345,6 +217,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_kinesis_name" />
 
             <TextView
@@ -380,6 +254,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_angelic_buster_name" />
 
             <TextView
@@ -400,6 +276,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_zero_name" />
 
             <ImageView
@@ -413,6 +290,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_zero_name" />
 
             <TextView
@@ -435,6 +314,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_zenon_name" />
 
             <ImageView
@@ -448,6 +328,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_zenon_name" />
 
             <TextView
@@ -468,6 +350,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_cadena_name" />
 
             <ImageView
@@ -481,6 +364,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_cadena_name" />
 
             <TextView
@@ -502,6 +387,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_illium_name" />
 
             <ImageView
@@ -515,6 +401,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_illium_name" />
 
             <TextView
@@ -535,6 +423,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_ark_name" />
 
             <ImageView
@@ -548,6 +437,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_ark_name" />
 
             <TextView
@@ -569,6 +460,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_hoyoung_name" />
 
             <ImageView
@@ -582,6 +474,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_hoyoung_name" />
 
             <TextView
@@ -602,6 +496,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_adele_name" />
 
             <ImageView
@@ -615,6 +510,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_adele_name" />
 
             <TextView
@@ -636,6 +533,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_kain_name" />
 
             <ImageView
@@ -649,6 +547,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="10sp"
+                android:textStyle="bold"
                 android:text="@string/link_kain_name" />
 
             <TextView
@@ -669,6 +569,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_lara_name" />
 
             <ImageView
@@ -682,6 +583,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_lara_name" />
 
             <TextView
@@ -703,6 +606,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="11sp"
                 android:text="@string/class_khali_name" />
 
             <ImageView
@@ -716,6 +620,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4sp"
+                android:textSize="12sp"
+                android:textStyle="bold"
                 android:text="@string/link_khali_name" />
 
             <TextView
@@ -726,5 +632,150 @@
                 android:layout_marginBottom="4sp"
                 android:text="@string/link_khali_effect" />
         </TableRow>
+
+            <!-- 모험가 (마법사) -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:text="@string/class_magician_name" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4sp"
+                    android:layout_marginBottom="4sp"
+                    android:src="@drawable/magician_link" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="@string/link_magician_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:textSize="11sp"
+                    android:layout_marginTop="4sp"
+                    android:layout_marginBottom="4sp"
+                    android:text="@string/link_magician_effect" />
+            </TableRow>
+
+            <!-- 모험가 (궁수) -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:text="@string/class_archer_name" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4sp"
+                    android:layout_marginBottom="4sp"
+                    android:src="@drawable/archer_link" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="@string/link_archer_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="4sp"
+                    android:layout_marginBottom="4sp"
+                    android:text="@string/link_archer_effect" />
+            </TableRow>
+
+            <!-- 모험가 (도적) -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:text="@string/class_thief_name" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4sp"
+                    android:layout_marginBottom="4sp"
+                    android:src="@drawable/thief_link" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4sp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:text="@string/link_thief_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="4sp"
+                    android:layout_marginBottom="4sp"
+                    android:text="@string/link_thief_effect" />
+            </TableRow>
+
+            <!-- 모험가 (해적) -->
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:text="@string/class_pirate_name" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4sp"
+                    android:layout_marginBottom="4sp"
+                    android:src="@drawable/pirot_link" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4sp"
+                    android:text="@string/link_pirate_name" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="4sp"
+                    android:layout_marginBottom="4sp"
+                    android:text="@string/link_pirate_effect" />
+            </TableRow>
     </TableLayout>
 </LinearLayout>
