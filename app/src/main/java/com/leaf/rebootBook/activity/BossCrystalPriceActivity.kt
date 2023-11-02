@@ -1,4 +1,4 @@
-package com.leaf.rebootBook
+package com.leaf.rebootBook.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +9,7 @@ import com.leaf.rebootBook.dataClass.BossMonster
 import com.leaf.rebootBook.dataClass.DropItem
 import com.leaf.rebootBook.databinding.ActivityBossCrystalPriceBinding
 import com.google.android.material.tabs.TabLayoutMediator
+import com.leaf.rebootBook.R
 
 class BossCrystalPriceActivity : AppCompatActivity() {
     private lateinit var binding: ActivityBossCrystalPriceBinding
@@ -746,9 +747,8 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 getString(R.string.normal_v_hilla_price),
                 BossMonster.BossType.WEEKLY,
                 listOf(
-                    DropItem(name = getString(R.string.dusk_earring), imageResId = R.drawable.dusk_earring),
+                    DropItem(name = getString(R.string.seren_pendant), imageResId = R.drawable.seren_pendant),
                     DropItem(name = getString(R.string.lucid_box), imageResId = R.drawable.lucid_box),
-                    DropItem(name = getString(R.string.hilla_strength), imageResId = R.drawable.hilla_strength),
                     DropItem(name = getString(R.string.middle_ring_box), imageResId = R.drawable.middle_ring_box),
                     DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda)
                 ),
@@ -818,7 +818,7 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 getString(R.string.hard_v_hilla_price),
                 BossMonster.BossType.WEEKLY,
                 listOf(
-                    DropItem(name = getString(R.string.dusk_earring), imageResId = R.drawable.dusk_earring),
+                    DropItem(name = getString(R.string.seren_pendant), imageResId = R.drawable.seren_pendant),
                     DropItem(name = getString(R.string.hilla_pendant), imageResId = R.drawable.hilla_pendant),
                     DropItem(name = getString(R.string.lucid_box), imageResId = R.drawable.lucid_box),
                     DropItem(name = getString(R.string.hilla_strength), imageResId = R.drawable.hilla_strength),
@@ -838,7 +838,7 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 getString(R.string.normal_serene_price),
                 BossMonster.BossType.WEEKLY,
                 listOf(
-                    DropItem(name = getString(R.string.dusk_earring), imageResId = R.drawable.dusk_earring),
+                    DropItem(name = getString(R.string.seren_pendant), imageResId = R.drawable.seren_pendant),
                     DropItem(name = getString(R.string.high_ring_box), imageResId = R.drawable.high_ring_box),
                     DropItem(name = getString(R.string.low_sol_elda), imageResId = R.drawable.low_sol_elda)
                 ),
@@ -854,7 +854,7 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 getString(R.string.hard_serene_price),
                 BossMonster.BossType.WEEKLY,
                 listOf(
-                    DropItem(name = getString(R.string.dusk_earring), imageResId = R.drawable.dusk_earring),
+                    DropItem(name = getString(R.string.seren_pendant), imageResId = R.drawable.seren_pendant),
                     DropItem(name = getString(R.string.mittra_box), imageResId = R.drawable.mittra_box),
                     DropItem(name = getString(R.string.mittra_core_jam), imageResId = R.drawable.mittra_core_jam),
                     DropItem(name = getString(R.string.best_ring_box), imageResId = R.drawable.best_ring_box),
@@ -873,7 +873,7 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 BossMonster.BossType.WEEKLY,
                 listOf(
                     DropItem(name = getString(R.string.gravity_module), imageResId = R.drawable.gravity_module),
-                    DropItem(name = getString(R.string.dusk_earring), imageResId = R.drawable.dusk_earring),
+                    DropItem(name = getString(R.string.seren_pendant), imageResId = R.drawable.seren_pendant),
                     DropItem(name = getString(R.string.mittra_box), imageResId = R.drawable.mittra_box),
                     DropItem(name = getString(R.string.mittra_core_jam), imageResId = R.drawable.mittra_core_jam),
                     DropItem(name = getString(R.string.best_ring_box), imageResId = R.drawable.best_ring_box),
@@ -929,6 +929,7 @@ class BossCrystalPriceActivity : AppCompatActivity() {
                 BossMonster.BossType.WEEKLY,
                 listOf(
                     DropItem(name = getString(R.string.kalos_box), imageResId = R.drawable.kalos_box),
+                    DropItem(name = getString(R.string.kalos_android), imageResId = R.drawable.kalos_android),
                     DropItem(name = getString(R.string.best_ring_box), imageResId = R.drawable.best_ring_box),
                     DropItem(name = getString(R.string.middle_sol_elda), imageResId = R.drawable.middle_sol_elda),
                     DropItem(name = getString(R.string.ring_upgrade), imageResId = R.drawable.kalos_ring_upgrade),

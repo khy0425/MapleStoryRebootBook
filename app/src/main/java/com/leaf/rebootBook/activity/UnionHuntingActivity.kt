@@ -1,4 +1,4 @@
-package com.leaf.rebootBook
+package com.leaf.rebootBook.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +13,7 @@ import com.leaf.rebootBook.viewModel.HuntingViewModel
 import com.leaf.rebootBook.viewModel.HuntingViewModelFactory
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
+import com.leaf.rebootBook.R
 
 class UnionHuntingActivity : AppCompatActivity() {
 

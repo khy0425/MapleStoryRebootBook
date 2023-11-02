@@ -20,7 +20,7 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/GOOGLE_AD_APP_ID" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true">
             <intent-filter>
@@ -33,22 +33,25 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity android:name="com.leaf.rebootBook.UnionHuntingActivity"
+        <activity android:name="com.leaf.rebootBook.activity.UnionHuntingActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name="com.leaf.rebootBook.CalculatorActivity"
+        <activity android:name="com.leaf.rebootBook.activity.CalculatorActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name="com.leaf.rebootBook.UnionEffectActivity"
+        <activity android:name="com.leaf.rebootBook.activity.UnionEffectActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name="com.leaf.rebootBook.BossCrystalPriceActivity"
+        <activity android:name="com.leaf.rebootBook.activity.BossCrystalPriceActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name="com.leaf.rebootBook.QuestHelperActivity"
+        <activity android:name="com.leaf.rebootBook.activity.QuestHelperActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
-        <activity android:name="com.leaf.rebootBook.WeaponOptionActivity"
+        <activity android:name="com.leaf.rebootBook.activity.WeaponOptionActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:exported="true"/>
+        <activity android:name=".activity.ItemRecipeActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true"/>
     </application>

@@ -1,4 +1,4 @@
-package com.leaf.rebootBook
+package com.leaf.rebootBook.activity
 
 import android.content.Intent
 import android.os.Build
@@ -12,9 +12,18 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.MobileAds
+import com.leaf.rebootBook.BuildConfig
+import com.leaf.rebootBook.EventCrawlerTask
+import com.leaf.rebootBook.KeyManager
+import com.leaf.rebootBook.R
 import com.leaf.rebootBook.adapter.EventAdapter
 import com.leaf.rebootBook.databinding.ActivityMainBinding
-import com.google.android.gms.ads.AdRequest
+import java.io.FileInputStream
+import java.lang.Exception
+import java.util.Properties
+
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -22,6 +31,19 @@ class MainActivity : AppCompatActivity() {
     private lateinit var eventAdapter: EventAdapter
     private lateinit var toggle: ActionBarDrawerToggle
     private lateinit var swipeRefreshLayout: SwipeRefreshLayout
+
+    private fun getPropertiesValue(key: String): String? {
+        val properties = Properties()
+        val inputStream: FileInputStream
+        try {
+            inputStream = FileInputStream(applicationContext.filesDir.path +"/local.properties")
+            properties.load(inputStream)
+        }catch (e: Exception) {
+            e.printStackTrace()
+            return null
+        }
+        return properties.getProperty(key)
+    }
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         val keyManager = KeyManager(this)
-        val googleAdKey = "ca-app-pub-1075071967728463/1125189187"
+        val googleAdKey = getPropertiesValue("googleAdUnitId") ?: ""
         val encryptedGoogleAdKey = keyManager.encrypt(googleAdKey)
         keyManager.saveKey("googleAdKey", encryptedGoogleAdKey)
 
@@ -128,20 +150,23 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.nav_item8 -> {
                     // TODO: 주요 레시피 정리
+                    val intent = Intent(this, ItemRecipeActivity::class.java)
+                    startActivity(intent)
                 }
             }
             binding.drawerLayout.closeDrawer(GravityCompat.START)
             true
         }
 
-        // nav_3, nav_8 버튼을 숨김
+        // nav_3버튼을 숨김
         binding.navigationView.menu.findItem(R.id.nav_item3).isVisible = false
-        binding.navigationView.menu.findItem(R.id.nav_item8).isVisible = false
 
-//        binding.adView.adUnitId = BuildConfig.GOOGLE_AD_UNIT_ID
+        // Initialize MobileAds
+        MobileAds.initialize(this) {
+            val adRequest = AdRequest.Builder().build()
+            binding.adView.loadAd(adRequest)
+        }
 
-        val adRequest = AdRequest.Builder().build()
-        binding.adView.loadAd(adRequest)
     }
 
     private fun refreshEvents() {

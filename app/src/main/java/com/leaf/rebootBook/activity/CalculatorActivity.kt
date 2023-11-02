@@ -1,4 +1,4 @@
-package com.leaf.rebootBook
+package com.leaf.rebootBook.activity
 
 import android.content.Context
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.leaf.rebootBook.R
 import com.leaf.rebootBook.databinding.ActivityCalculatorBinding
 
 class CalculatorActivity : AppCompatActivity() {

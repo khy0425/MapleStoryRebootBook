@@ -496,6 +496,7 @@
 
     <string name="nightmare_piece">악몽의 조각</string>
 
+    <string name="seren_pendant">데이브레이크 펜던트</string>
     <string name="mittra_core_jam">미트라의 코어 젬스톤</string>
     <string name="mittra_box">미트라의 분노 선택 상자</string>
 
@@ -631,8 +632,8 @@
         하드 스우는 패턴이 강화되어서 스펙이 아무리 높아도 컨트롤이 받쳐주지 않는다면 클리어가 불가능하다.\n
         데스 카운트는 똑같이 5인데 모든 고철 낙하물이 스턴을 걸게 변경된데다 스턴의 지속시간마저 노멀보다 길고, 떨어지는 고철의 빈도수가 쉴새 없이 떨어진다.\n
         또한 2페이즈와 3페이즈의 전기 필드 패턴은 즉사기가 되었고 모든 공격 데미지도 20% 더 강화되었다.\n
-        6인 파티 기준 무릉 층수로 48층 이상부터 하드 스우 격수가 가능하고, 솔플의 경우 직업 따라 다르지만 55층 정도가 최소컷이며\n
-        극한의 컨트롤로 풀딜을 박을 수 있다면 이론상 53층이다.\n\n
+        6인 파티 기준 무릉 층수로 49층 이상부터 하드 스우 격수가 가능하고, 솔플의 경우 직업 따라 다르지만 55층 정도가 최소컷이며\n
+        제네시스 무기 해방 퀘스트를 클리어하기 위한 층수는 최소 53층이다.\n\n
 
         최근 서포터들의 개인보상인 앱솔랩스 장비 상자를 얻기 위해서는 데미지를 5%이상 넣어야하도록 패치가 진행되어서 보조를 구하는 것이 과거보다는 어려워진 편이다.\n
         6차전직 이후, 솔 에르다의 기운이 하드 난이도 부터 드랍하기 시작한다.
@@ -755,10 +756,10 @@
         노멀 진 힐라는 처치 시 데이브레이크 펜던트와 아케인 방어구, 무기 상자가 드롭된다.\n
         영혼 베기 패턴 주기가 하드 모드보다 길고 영혼 베기 패턴 주기가 정해지는 체력도 기존보다 적은 1번만으로 변경된다.\n
         체력 또한 하드 모드의 절반으로 감소했다.\n
-        레벨 255, 포스 1350 기준 6인파티는 50층 이상, 솔플은 55층 정도를 요구한다.\n
-        최소컷은 54층이며 장인은 53층도 솔플이 가능하다.\n
-        진힐라의 패턴을 좀 더 빠른 시기에 파악할 수 있어 노멀 난이도에서 쌓은 숙련도를 바탕으로 하드 난이도로 손쉽게 넘어갈 수 있는\n
-        중간다리 측면에는 좋은 보스이기에, 트라이 하는 파티가 많은 편.\n
+        레벨 255, 포스 1230 기준 6인 파티는 49층 이상, 솔플은 55층 정도를 요구한다.\n
+        최소컷은 54층. 과거 파티에 참여하려면 꽤나 높은 스펙을 요구했던 진 힐라의 패턴을 좀 더 빠른 시기에 파악할 수 있어\n
+        노멀 난이도에서 쌓은 숙련도를 바탕으로 하드 난이도로 손쉽게 넘어갈 수 있는 중간다리 측면에서는 좋은 보스이기에,\n
+        노멀 난이도가 추가된 이후 낮은 빈도긴 하지만 노멀 진 힐라를 트라이하는 파티들도 제법 생기고 있다.\n
         진 힐라는 노멀 난이도에서 부터 솔 에르다의 기운이 드랍된다.
     </string>
     <string name="verus_hilla_hard_description">
@@ -937,8 +938,8 @@
     <string name="djunkel_hard_force">850</string>
     <string name="djunkel_hard_boost">1275</string>
     
-    <string name="hilla_normal_force">900</string>
-    <string name="hilla_normal_boost">1350</string>
+    <string name="hilla_normal_force">820</string>
+    <string name="hilla_normal_boost">1230</string>
     <string name="hilla_hard_force">900</string>
     <string name="hilla_hard_boost">1350</string>
     
@@ -974,6 +975,7 @@
 
 
     <string name="search_hint">무기의 종류와 이름으로 검색이 가능합니다.</string>
+    <string name="recipe_search_hint">레시피 이름으로 검색이 가능합니다.</string>
     <string name="warrior">전사</string>
     <string name="magician">마법사</string>
     <string name="archer">궁수</string>

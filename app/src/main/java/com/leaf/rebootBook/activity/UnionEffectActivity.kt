@@ -1,4 +1,4 @@
-package com.leaf.rebootBook
+package com.leaf.rebootBook.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +9,7 @@ import com.leaf.rebootBook.databinding.ActivityUnionEffectBinding
 import com.leaf.rebootBook.fragment.LinkEffectFragment
 import com.leaf.rebootBook.fragment.UnionEffectFragment
 import com.google.android.material.tabs.TabLayoutMediator
+import com.leaf.rebootBook.R
 
 class UnionEffectActivity : AppCompatActivity() {
     private lateinit var binding: ActivityUnionEffectBinding
