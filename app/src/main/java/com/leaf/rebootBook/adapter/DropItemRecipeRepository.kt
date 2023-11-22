@@ -239,28 +239,6 @@ object DropItemRecipeRepository {
             usageDuration = UsageDuration.ETERNALLY,
             category = enhancedMagiPotion
         ),
-        //9단계 힘의 물약, 향상된 물약
-        ItemRecipe(
-            acquisition = listOf(
-                Acquisition.NPC(name = "마이스터빌 지뉴")
-            ),
-            name = "★9단계 힘의 물약",
-            usageDuration = UsageDuration.DAILY,
-            category = enhancedStrPotion
-        ),
-        ItemRecipe(
-            acquisition = listOf(
-                Acquisition.Monster(name = "판스", level = 123),
-                Acquisition.Monster(name = "블루 드래곤터틀", level = 127),
-                Acquisition.Monster(name = "[★]마이너 좀비", level = 132),
-                Acquisition.Monster(name = "추억의 수호대장", level = 144),
-                Acquisition.Monster(name = "정식기사E", level = 176),
-                Acquisition.Monster(name = "메카티안", level = 176),
-            ),
-            name = "★향상된 9단계 힘의 물약",
-            usageDuration = UsageDuration.ETERNALLY,
-            category = enhancedStrPotion
-        ),
         //10단계 힘의 물약, 향상된 물약
         ItemRecipe(
             acquisition = listOf(
@@ -279,27 +257,6 @@ object DropItemRecipeRepository {
             name = "향상된 10단계 힘의 물약",
             usageDuration = UsageDuration.ETERNALLY,
             category = enhancedStrPotion
-        ),
-        //9단계 지능의 물약, 향상된 물약
-        ItemRecipe(
-            acquisition = listOf(
-                Acquisition.NPC(name = "마이스터빌 지뉴")
-            ),
-            name = "★9단계 지능의 물약",
-            usageDuration = UsageDuration.DAILY,
-            category = enhancedIntPotion
-        ),
-        ItemRecipe(
-            acquisition = listOf(
-                Acquisition.Monster(name = "레인디어", level = 118),
-                Acquisition.Monster(name = "베어울프", level = 122),
-                Acquisition.Monster(name = "후회의 신관", level = 147),
-                Acquisition.Monster(name = "정식기사E", level = 176),
-                Acquisition.Monster(name = "메카티안", level = 176),
-            ),
-            name = "★향상된 9단계 지능의 물약",
-            usageDuration = UsageDuration.ETERNALLY,
-            category = enhancedIntPotion
         ),
         //10단계 지능의 물약, 향상된 물약
         ItemRecipe(
@@ -362,6 +319,7 @@ object DropItemRecipeRepository {
         //전설의 영웅 비약
         ItemRecipe(
             acquisition = listOf(
+                Acquisition.Monster(name = "블루 드래곤터틀", level = 127),
                 Acquisition.Monster(name = "[★]증기뿜는 커피머신", level = 155),
                 Acquisition.Monster(name = "망각의 수호병", level = 164),
                 Acquisition.Monster(name = "정식기사B", level = 170),

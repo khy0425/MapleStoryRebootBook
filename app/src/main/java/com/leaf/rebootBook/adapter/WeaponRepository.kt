@@ -141,7 +141,7 @@ object WeaponRepository {
         Weapon(110, WeaponType.BLASTER, "엘라하", mapOf("1추" to 157, "2추" to 123, "3추" to 93, "4추" to 68, "5추" to 46), R.drawable.g_blaster, Category.WARRIOR, Brand.GENESIS),
         Weapon(111, WeaponType.ADELE, "튜너", mapOf("1추" to 210, "2추" to 164, "3추" to 124, "4추" to 90, "5추" to 62), R.drawable.g_adele, Category.WARRIOR, Brand.GENESIS),
 
-        Weapon(112, WeaponType.WAND, "완드", mapOf("1추" to 250, "2추" to 195, "3추" to 148, "4추" to 108, "5추" to 74), R.drawable.g_wand, Category.MAGICIAN, Brand.GENESIS),
+        Weapon(112, WeaponType.WAND, "완드", mapOf("1추" to 246, "2추" to 192, "3추" to 146, "4추" to 106, "5추" to 72), R.drawable.g_wand, Category.MAGICIAN, Brand.GENESIS),
         Weapon(113, WeaponType.STAFF, "스태프", mapOf("1추" to 250, "2추" to 195, "3추" to 148, "4추" to 108, "5추" to 74), R.drawable.g_staff, Category.MAGICIAN, Brand.GENESIS),
         Weapon(114, WeaponType.LUMI, "샤이닝로드", mapOf("1추" to 246, "2추" to 192, "3추" to 146, "4추" to 106, "5추" to 72), R.drawable.g_lumi, Category.MAGICIAN, Brand.GENESIS),
         Weapon(115, WeaponType.ESP, "ESP 리미터", mapOf("1추" to 246, "2추" to 192, "3추" to 146, "4추" to 106, "5추" to 72), R.drawable.g_esp, Category.MAGICIAN, Brand.GENESIS),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "22185761375",
+    "project_id": "rebootbook-871e4",
+    "storage_bucket": "rebootbook-871e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22185761375:android:82b771014ddea2225759ea",
+        "android_client_info": {
+          "package_name": "com.leaf.rebootBook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUSemcvHDJtrBFZrpxGCc3PyLTdsUD6_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

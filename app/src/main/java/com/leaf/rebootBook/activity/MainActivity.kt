@@ -12,17 +12,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.MobileAds
 import com.leaf.rebootBook.BuildConfig
 import com.leaf.rebootBook.EventCrawlerTask
-import com.leaf.rebootBook.KeyManager
 import com.leaf.rebootBook.R
 import com.leaf.rebootBook.adapter.EventAdapter
 import com.leaf.rebootBook.databinding.ActivityMainBinding
-import java.io.FileInputStream
-import java.lang.Exception
-import java.util.Properties
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,19 +29,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var eventAdapter: EventAdapter
     private lateinit var toggle: ActionBarDrawerToggle
     private lateinit var swipeRefreshLayout: SwipeRefreshLayout
-
-    private fun getPropertiesValue(key: String): String? {
-        val properties = Properties()
-        val inputStream: FileInputStream
-        try {
-            inputStream = FileInputStream(applicationContext.filesDir.path +"/local.properties")
-            properties.load(inputStream)
-        }catch (e: Exception) {
-            e.printStackTrace()
-            return null
-        }
-        return properties.getProperty(key)
-    }
 
     @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -58,11 +43,6 @@ class MainActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@MainActivity)
             adapter = eventAdapter
         }
-
-        val keyManager = KeyManager(this)
-        val googleAdKey = getPropertiesValue("googleAdUnitId") ?: ""
-        val encryptedGoogleAdKey = keyManager.encrypt(googleAdKey)
-        keyManager.saveKey("googleAdKey", encryptedGoogleAdKey)
 
         eventCrawlerTask = EventCrawlerTask()
         eventCrawlerTask.execute { eventItems ->
@@ -161,10 +141,15 @@ class MainActivity : AppCompatActivity() {
         // nav_3버튼을 숨김
         binding.navigationView.menu.findItem(R.id.nav_item3).isVisible = false
 
-        // Initialize MobileAds
+        // Initialize MobileAds with the Ad ID from BuildConfig
         MobileAds.initialize(this) {
             val adRequest = AdRequest.Builder().build()
             binding.adView.loadAd(adRequest)
+            binding.adView.adListener = object : AdListener() {
+                override fun onAdFailedToLoad(adError: LoadAdError) {
+                    Log.e("AdView", adError.message)
+                }
+            }
         }
 
     }
